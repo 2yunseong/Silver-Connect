@@ -1,0 +1,11 @@
+#calender .container {
+  height: calc(100vh - 240px) !important;
+}
+
+.timepicker {
+  margin-right: 1rem;
+}
+
+.timepicker:last-child {
+  margin-right: 0;
+}
