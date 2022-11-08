@@ -8,8 +8,12 @@ const MyPage = () => {
   const [isEdit, setIsEdit] = useState(false);
 
   const onToggle = () => {
+    if (isEdit) {
+      // edit logic => to server... send data
+    }
     setIsEdit(() => !isEdit);
   };
+
   useEffect(() => {
     setUserData(() => myPageData);
   }, []);
