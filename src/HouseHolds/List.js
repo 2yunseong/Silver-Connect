@@ -1,3 +1,5 @@
+import Select from './Select';
+
 const dummyLists = [
   {
     name: '장광팔',
@@ -36,22 +38,22 @@ const dummyLists = [
 const List = () => {
   return (
     <div className='household-list'>
-      <header className='list-header'>
-        <div>이름</div>
-        <div>주소</div>
-        <div>연세</div>
-        <div>연락처</div>
-        <div>보호자이름</div>
-        <div>보호자 연락처</div>
+      <header className='list-header flex flex-row'>
+        <div className='px-10'>이름</div>
+        <div className='px-10'>주소</div>
+        <div className='px-10'>연세</div>
+        <div className='px-10'>연락처</div>
+        <div className='px-10'>보호자 이름</div>
+        <div className='px-10'>보호자 연락처</div>
       </header>
       {dummyLists.map((household) => (
-        <div>
-          <div>{household.name}</div>
-          <div>{household.address}</div>
-          <div>{household.age}</div>
-          <div>{household.phone}</div>
-          <div>{household.supporter}</div>
-          <div>{household.supporterPhone}</div>
+        <div className='flex flex-row'>
+          <div className='px-10'>{household.name}</div>
+          <div className='px-10'>{household.address}</div>
+          <div className='px-10'>{household.age}</div>
+          <div className='px-10'>{household.phone}</div>
+          <div className='px-10'>{household.supporter}</div>
+          <div className='px-10'>{household.supporterPhone}</div>
         </div>
       ))}
     </div>
