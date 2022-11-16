@@ -1,6 +1,8 @@
 import Select from './Select';
 import './List.css';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import Add from './Add';
 
 const dummyLists = [
   {
@@ -38,13 +40,18 @@ const dummyLists = [
 ];
 
 const List = () => {
+  const [isAddClick, setIsAddClick] = useState(false);
   const navigate = useNavigate();
 
   const onClick = () => {
     navigate('/select');
   };
+
+  const onAdd = () => {
+    setIsAddClick(() => !isAddClick);
+  };
   return (
-    <div className='table-container flex justify-center items-center'>
+    <div className='table-container flex justify-center items-center flex-col'>
       <table className='text-center'>
         <thead>
           <tr className='font-bold text-base text-slate-400'>
@@ -69,6 +76,15 @@ const List = () => {
           ))}
         </tbody>
       </table>
+      <button
+        className='m-8 px-8 py-2 bg-blue-600 rounded-lg text-white'
+        onClick={onAdd}
+      >
+        추가
+      </button>
+      {isAddClick && (
+        <Add isAddClick={isAddClick} setIsAddClick={setIsAddClick} />
+      )}
     </div>
   );
 };
