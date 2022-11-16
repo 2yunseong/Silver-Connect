@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar';
 import Homepage from './Homepage/Homepage';
 import List from './HouseHolds/List';
 import MyPage from './MyPage/MyPage';
+import Select from './HouseHolds/Select';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/homepage' element={<Homepage />} />
         <Route path='/household' element={<List />} />
         <Route path='/mypage' element={<MyPage />} />
+        <Route path='/select' element={<Select />} />
       </Routes>
     </BrowserRouter>
   );
