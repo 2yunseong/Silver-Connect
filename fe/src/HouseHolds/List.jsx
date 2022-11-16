@@ -1,5 +1,6 @@
 import Select from './Select';
 import './List.css';
+import { useNavigate } from 'react-router-dom';
 
 const dummyLists = [
   {
@@ -37,6 +38,11 @@ const dummyLists = [
 ];
 
 const List = () => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate('/select');
+  };
   return (
     <div className='table-container flex justify-center items-center'>
       <table className='text-center'>
@@ -52,7 +58,7 @@ const List = () => {
         </thead>
         <tbody>
           {dummyLists.map((household) => (
-            <tr className='text-xl border-b-2'>
+            <tr onClick={onClick} className='text-xl border-b-2'>
               <td className='py-7'>{household.name}</td>
               <td className='py-7'>{household.address}</td>
               <td className='py-7'>{household.age}</td>
