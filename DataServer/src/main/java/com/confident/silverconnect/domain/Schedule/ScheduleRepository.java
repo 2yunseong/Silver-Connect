@@ -1,4 +1,4 @@
-package com.confident.domain.Schedule;
+package com.confident.silverconnect.domain.Schedule;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

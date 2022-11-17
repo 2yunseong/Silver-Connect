@@ -1,4 +1,4 @@
-package com.confident.domain.Household;
+package com.confident.silverconnect.domain.Household;
 
 public enum Risk {
     SAFE,

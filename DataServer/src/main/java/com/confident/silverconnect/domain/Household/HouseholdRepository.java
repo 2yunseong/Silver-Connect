@@ -1,4 +1,4 @@
-package com.confident.domain.Household;
+package com.confident.silverconnect.domain.Household;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

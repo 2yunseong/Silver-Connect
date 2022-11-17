@@ -1,6 +1,7 @@
-package com.confident.domain.Guardian;
+package com.confident.silverconnect.domain.Guardian;
 
 import com.confident.domain.Household.Household;
+import com.confident.silverconnect.domain.Household.Household;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,14 +1,14 @@
-package com.confident.domain.User;
+package com.confident.silverconnect.domain.User;
 
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @NoArgsConstructor
 @Getter
