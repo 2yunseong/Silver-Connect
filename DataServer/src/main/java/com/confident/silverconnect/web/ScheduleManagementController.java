@@ -1,6 +1,6 @@
 package com.confident.silverconnect.web;
 
-import com.confident.silverconnect.dto.Schedule.ScheduleDto;
+import com.confident.silverconnect.dto.Schedule.ScheduleInfoDto;
 import com.confident.silverconnect.dto.Schedule.ScheduleSaveDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,9 +22,9 @@ public class ScheduleManagementController {
         return ResponseEntity.ok().build();
     }
 
-    @Operation(summary = "스케줄 조회")
+    @Operation(summary = "스케줄 모든 정보 조회")
     @GetMapping("/api/schedule/{scheduleId}")
-    public ResponseEntity<ScheduleDto> getScheduleDtoByScheduleId(@PathVariable(value = "scheduleId") Long scheduleId) {
+    public ResponseEntity<ScheduleSaveDto> getScheduleDtoByScheduleId(@PathVariable(value = "scheduleId") Long scheduleId) {
         return ResponseEntity.ok().build();
     }
 

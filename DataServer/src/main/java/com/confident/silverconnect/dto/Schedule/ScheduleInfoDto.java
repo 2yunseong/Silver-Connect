@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ScheduleDto {
+public class ScheduleInfoDto {
 
     private Long id;
     private Long householdId;
@@ -22,7 +22,7 @@ public class ScheduleDto {
     private Risk risk;
 
     @Builder
-    public ScheduleDto(Long id, Long householdId, String residentName, Integer residentAge, String householdAddress, Long guardianId, String guardianName, String guardianPhoneNumber, Risk risk) {
+    public ScheduleInfoDto(Long id, Long householdId, String residentName, Integer residentAge, String householdAddress, Long guardianId, String guardianName, String guardianPhoneNumber, Risk risk) {
         this.id = id;
         this.householdId = householdId;
         this.residentName = residentName;
