@@ -15,8 +15,8 @@ public class SwaggerConfig {
         License license = new License().name("Copyright(C) CWY Corporation All rights reserved.");
         return new OpenAPI()
                 .components(new Components())
-                .info(new Info().title("Econo Beep API")
-                        .description("Econo Beep 서버")
-                        .version("v2.0.0"));
+                .info(new Info().title("Silver Connect - Data server  API")
+                        .description("데이터 서버 API")
+                        .version("v0.0.1"));
     }
 }
