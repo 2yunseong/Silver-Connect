@@ -1,6 +1,5 @@
 package com.confident.silverconnect.domain.Schedule;
 
-import com.confident.domain.Household.Household;
 import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.User.User;
 import com.sun.istack.NotNull;

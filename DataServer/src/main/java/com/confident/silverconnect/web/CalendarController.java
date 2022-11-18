@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,13 +21,16 @@ public class CalendarController {
     @Operation(summary = "특정 월의 스케줄들 조회")
     @GetMapping("/api/calendar/{userId}/month/{month}")
     public ResponseEntity<List<ScheduleSimpleDto>> getMonthlySchedulesByUserId(@PathVariable(value = "userId") Long userid,
-                                                                               @PathVariable(value = "month") Integer month) {
+                                                                               @PathVariable(value = "month") Integer month,
+                                                                               @ModelAttribute(value = "accessToken") String accessToken) {
         return ResponseEntity.ok().build();
     }
 
-    @Operation(summary = "일별 스케줄 상세 조회")
-    @GetMapping("/api/schedule/{scheduleId}")
-    public ResponseEntity<ScheduleInfoDto> getScheduleDtoByScheduleId(@PathVariable(value = "scheduleId") Long scheduleId) {
+    @Operation(summary = "특정 id의 스케줄 캘린더 포멧 조회")
+    @GetMapping("/api/calendar/{userId}/schedule/{scheduleId}")
+    public ResponseEntity<ScheduleInfoDto> getScheduleDtoByScheduleId(@PathVariable(value = "userId") Long userid,
+                                                                      @PathVariable(value = "scheduleId") Long scheduleId,
+                                                                      @ModelAttribute(value = "accessToken") String accessToken) {
         return ResponseEntity.ok().build();
     }
 }
