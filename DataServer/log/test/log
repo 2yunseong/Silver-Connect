@@ -3001,3 +3001,89 @@ DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
 2022-11-18 15:27:05.331  INFO 16338 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-11-18 15:27:05.333  INFO 16338 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-11-18 15:27:30.474  INFO 16338 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 230 ms
+2022-11-18 15:44:34.725  INFO 16338 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:44:34.726  INFO 16338 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:44:34.992  INFO 16338 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:44:34.997  INFO 16338 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:44:39.548  INFO 16732 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16732 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:44:39.553  INFO 16732 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:44:40.274  INFO 16732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:44:40.327  INFO 16732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:44:40.833  INFO 16732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:44:40.843  INFO 16732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:44:40.843  INFO 16732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:44:40.972  INFO 16732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:44:40.972  INFO 16732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2022-11-18 15:44:40.997  INFO 16732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:44:41.149  INFO 16732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:44:41.160  INFO 16732 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:44:41.304  INFO 16732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:44:41.347  INFO 16732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:44:41.492  INFO 16732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:44:41.587  INFO 16732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:44:42.208  INFO 16732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:44:42.217  INFO 16732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:44:42.416  WARN 16732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:44:43.487  INFO 16732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:44:43.499  INFO 16732 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.505 seconds (JVM running for 5.327)
+2022-11-18 15:44:48.122  INFO 16732 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:44:48.123  INFO 16732 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:44:48.124  INFO 16732 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-18 15:45:13.529  INFO 16732 --- [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 250 ms
+2022-11-18 15:45:33.491  INFO 16732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:45:33.492  INFO 16732 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:45:33.762  INFO 16732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:45:33.767  INFO 16732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:45:41.502  INFO 16756 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16756 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:45:41.508  INFO 16756 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:45:42.234  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:45:42.287  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:45:42.761  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:45:42.771  INFO 16756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:45:42.771  INFO 16756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:45:42.888  INFO 16756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:45:42.888  INFO 16756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1342 ms
+2022-11-18 15:45:42.914  INFO 16756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:45:43.065  INFO 16756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:45:43.075  INFO 16756 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:45:43.219  INFO 16756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:45:43.261  INFO 16756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:45:43.406  INFO 16756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:45:43.509  INFO 16756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:45:44.143  INFO 16756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:45:44.150  INFO 16756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:45:44.315  WARN 16756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:45:45.217  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:45:45.229  INFO 16756 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.122 seconds (JVM running for 4.864)
+2022-11-18 15:45:48.024  INFO 16756 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:45:48.025  INFO 16756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:45:48.027  INFO 16756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-18 15:46:58.643  INFO 16756 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:46:58.644  INFO 16756 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:46:58.897  INFO 16756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:46:58.900  INFO 16756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:47:01.865  INFO 16797 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16797 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:47:01.873  INFO 16797 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:47:02.656  INFO 16797 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:47:02.712  INFO 16797 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:47:03.238  INFO 16797 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:47:03.247  INFO 16797 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:47:03.248  INFO 16797 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:47:03.365  INFO 16797 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:47:03.366  INFO 16797 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1451 ms
+2022-11-18 15:47:03.392  INFO 16797 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:47:03.541  INFO 16797 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:47:03.550  INFO 16797 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:47:03.691  INFO 16797 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:47:03.732  INFO 16797 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:47:03.874  INFO 16797 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:47:03.966  INFO 16797 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:47:04.569  INFO 16797 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:47:04.577  INFO 16797 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:47:04.751  WARN 16797 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:47:05.653  INFO 16797 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:47:05.666  INFO 16797 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.219 seconds (JVM running for 4.953)
+2022-11-18 15:47:11.760  INFO 16797 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:47:11.761  INFO 16797 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:47:11.762  INFO 16797 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-18 15:47:12.285  INFO 16797 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 290 ms
