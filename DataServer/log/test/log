@@ -2515,3 +2515,489 @@ alter table schedule drop foreign key FKa50n59y1j4a6qwa42p8jiguds [42102-200]
 2022-11-18 15:04:41.032  INFO 15422 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-11-18 15:04:41.292  INFO 15422 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-11-18 15:04:41.296  INFO 15422 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:17:40.580  INFO 16145 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16145 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:17:40.584  INFO 16145 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:17:41.769  INFO 16145 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:17:41.862  INFO 16145 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:17:42.692  INFO 16145 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:17:42.705  INFO 16145 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:17:42.705  INFO 16145 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:17:42.885  INFO 16145 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:17:42.886  INFO 16145 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2217 ms
+2022-11-18 15:17:42.933  INFO 16145 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:17:43.176  INFO 16145 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:17:43.193  INFO 16145 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:17:43.405  INFO 16145 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:17:43.476  INFO 16145 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:17:43.692  INFO 16145 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:17:43.843  INFO 16145 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:17:44.537  INFO 16145 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:17:44.548  INFO 16145 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:17:44.843  WARN 16145 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:17:45.798  INFO 16145 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:17:45.817  INFO 16145 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-11-18 15:17:45.829  INFO 16145 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 6.133 seconds (JVM running for 7.106)
+2022-11-18 15:18:00.101 ERROR 16145 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:19:00.006 ERROR 16145 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:20:00.004 ERROR 16145 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:21:00.003 ERROR 16145 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:21:09.001  INFO 16145 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:21:09.002  INFO 16145 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:21:09.308  INFO 16145 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:21:09.312  INFO 16145 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:21:14.241  INFO 16182 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16182 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:21:14.246  INFO 16182 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:21:15.084  INFO 16182 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:21:15.147  INFO 16182 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:21:15.694  INFO 16182 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:21:15.705  INFO 16182 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:21:15.705  INFO 16182 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:21:15.827  INFO 16182 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:21:15.828  INFO 16182 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2022-11-18 15:21:15.856  INFO 16182 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:21:16.003  INFO 16182 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:21:16.018  INFO 16182 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:21:16.176  INFO 16182 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:21:16.218  INFO 16182 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:21:16.351  INFO 16182 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:21:16.452  INFO 16182 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:21:17.045  INFO 16182 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:21:17.054  INFO 16182 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:21:17.318  WARN 16182 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:21:18.302  INFO 16182 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:21:18.319  INFO 16182 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-11-18 15:21:18.329  INFO 16182 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.77 seconds (JVM running for 6.16)
+2022-11-18 15:21:44.722  INFO 16182 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:21:44.723  INFO 16182 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:21:44.725  INFO 16182 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-18 15:22:00.080 ERROR 16182 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:23:00.005 ERROR 16182 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:24:00.005 ERROR 16182 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:24:56.053  INFO 16182 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:24:56.054  INFO 16182 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:24:56.318  INFO 16182 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:24:56.322  INFO 16182 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:24:59.830  INFO 16257 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16257 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:24:59.837  INFO 16257 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:25:00.564  INFO 16257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:25:00.618  INFO 16257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:25:01.130  INFO 16257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:25:01.143  INFO 16257 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:25:01.143  INFO 16257 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:25:01.271  INFO 16257 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:25:01.271  INFO 16257 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1396 ms
+2022-11-18 15:25:01.298  INFO 16257 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:25:01.438  INFO 16257 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:25:01.449  INFO 16257 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:25:01.599  INFO 16257 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:25:01.642  INFO 16257 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:25:01.799  INFO 16257 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:25:01.901  INFO 16257 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:25:02.556  INFO 16257 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:25:02.566  INFO 16257 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:25:02.857  WARN 16257 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:25:03.771  INFO 16257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:25:03.787  INFO 16257 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-11-18 15:25:03.796  INFO 16257 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.345 seconds (JVM running for 5.157)
+2022-11-18 15:25:18.085  INFO 16257 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:25:18.086  INFO 16257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:25:18.087  INFO 16257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-18 15:26:00.156 ERROR 16257 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ?]; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.lambda$cleanUpExpiredSessions$8(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.cleanUpExpiredSessions(JdbcIndexedSessionRepository.java:587) ~[spring-session-jdbc-2.6.3.jar:2.6.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.24.jar:5.3.24]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_SESSION" not found; SQL statement:
+DELETE FROM SPRING_SESSION WHERE EXPIRY_TIME < ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7599) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSimpleTableFilter(Parser.java:1350) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseDelete(Parser.java:1377) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:914) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1645) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:649) ~[spring-jdbc-5.3.24.jar:5.3.24]
+	... 14 common frames omitted
+
+2022-11-18 15:26:52.979  INFO 16257 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:26:52.981  INFO 16257 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-18 15:26:53.240  INFO 16257 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-18 15:26:53.247  INFO 16257 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-18 15:26:56.176  INFO 16338 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 16338 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-18 15:26:56.179  INFO 16338 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-18 15:26:56.904  INFO 16338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-18 15:26:56.958  INFO 16338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-11-18 15:26:57.544  INFO 16338 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-18 15:26:57.555  INFO 16338 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-18 15:26:57.555  INFO 16338 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-18 15:26:57.706  INFO 16338 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-18 15:26:57.707  INFO 16338 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2022-11-18 15:26:57.746  INFO 16338 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-18 15:26:57.923  INFO 16338 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-18 15:26:57.935  INFO 16338 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-18 15:26:58.126  INFO 16338 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-18 15:26:58.176  INFO 16338 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-18 15:26:58.323  INFO 16338 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-18 15:26:58.422  INFO 16338 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-18 15:26:58.989  INFO 16338 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-18 15:26:58.997  INFO 16338 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-18 15:26:59.246  WARN 16338 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-18 15:27:00.177  INFO 16338 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-18 15:27:00.194  INFO 16338 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-11-18 15:27:00.205  INFO 16338 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.431 seconds (JVM running for 5.123)
+2022-11-18 15:27:05.330  INFO 16338 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-18 15:27:05.331  INFO 16338 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-18 15:27:05.333  INFO 16338 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-18 15:27:30.474  INFO 16338 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 230 ms
