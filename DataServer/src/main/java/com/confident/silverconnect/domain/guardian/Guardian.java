@@ -1,6 +1,7 @@
-package com.confident.silverconnect.domain.Guardian;
+package com.confident.silverconnect.domain.guardian;
 
 import com.confident.silverconnect.domain.Household.Household;
+import com.confident.silverconnect.dto.guardian.GuardianUpdateRequestDto;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
@@ -37,5 +38,11 @@ public class Guardian {
         this.name = name;
         this.age = age;
         this.phoneNumber = phoneNumber;
+    }
+
+    public void update(GuardianUpdateRequestDto userUpdateRequestDto) {
+        this.name = userUpdateRequestDto.getName();
+        this.age = userUpdateRequestDto.getAge();
+        this.phoneNumber = userUpdateRequestDto.getPhoneNumber();
     }
 }

@@ -1,7 +1,6 @@
 package com.confident.silverconnect.web;
 
-import com.confident.silverconnect.dto.Schedule.ScheduleInfoDto;
-import com.confident.silverconnect.dto.Schedule.ScheduleSaveDto;
+import com.confident.silverconnect.dto.schedule.ScheduleSaveDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

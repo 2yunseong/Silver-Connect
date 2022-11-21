@@ -1,6 +1,9 @@
 package com.confident.silverconnect.web;
 
 import com.confident.silverconnect.domain.User.User;
+import com.confident.silverconnect.web.service.UserService;
+import com.confident.silverconnect.dto.user.UserFindDto;
+import com.confident.silverconnect.dto.user.UserUpdateRequestDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -30,7 +33,7 @@ public class UserController {
     @GetMapping("/api/user/{userId}")
     public ResponseEntity<User> findUserById(@PathVariable Long userId) {
         User account = userService.findUserById(userId);
-        return new ResponseEntity<>(account, headers, HttpStatus.OK);
+        return new ResponseEntity<>(account, HttpStatus.OK);
     }
 
     @Operation(summary = "전체 회원 수 조회", description = "전체 회원 수 조회")
@@ -90,16 +93,6 @@ public class UserController {
     @DeleteMapping("/api/user/{userId}")
     public ResponseEntity<User> deleteUser(@PathVariable Long userId) {
         userService.deleteUserById(userId);
-        return new ResponseEntity<>(successDeleteResponse, HttpStatus.OK);
-    }
-
-    @Operation(summary = "비밀번호 수정", description = "비밀번호")
-    @ApiResponses({
-            @ApiResponse(description = "이메일 보낸 인증 Code")
-    })
-    @PostMapping("/api/user/set-password/")
-    public ResponseEntity<User> setPassword(@Valid UserPasswordUpdateDto userPasswordUpdateDto){
-        User account = userService.setPassword(userPasswordUpdateDto);
-        return new ResponseEntity<>(account, HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

@@ -1,4 +1,4 @@
-package com.confident.silverconnect.domain.Guardian;
+package com.confident.silverconnect.domain.guardian;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 

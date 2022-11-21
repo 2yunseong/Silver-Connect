@@ -1,5 +1,6 @@
 package com.confident.silverconnect.domain.User;
 
+import com.confident.silverconnect.dto.user.UserUpdateRequestDto;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
@@ -37,5 +38,16 @@ public class User {
         this.password = password;
         this.name = name;
         this.phoneNumber = phoneNumber;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public void update(UserUpdateRequestDto userUpdateRequestDto){
+        this.email = userUpdateRequestDto.getEmail();
+        this.name = userUpdateRequestDto.getName();
+        this.phoneNumber = userUpdateRequestDto.getPhoneNumber();
+        this.password = userUpdateRequestDto.getPassword();
     }
 }

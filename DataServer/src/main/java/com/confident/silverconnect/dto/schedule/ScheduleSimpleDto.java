@@ -1,4 +1,4 @@
-package com.confident.silverconnect.dto.Schedule;
+package com.confident.silverconnect.dto.schedule;
 
 import com.confident.silverconnect.domain.Household.Risk;
 import lombok.Builder;
