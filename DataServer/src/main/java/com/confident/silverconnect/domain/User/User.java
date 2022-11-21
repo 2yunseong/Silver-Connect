@@ -38,8 +38,4 @@ public class User {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
-
-//    public void setProperties(UserSaveDto userSaveDto) {
-//
-//    }
 }
