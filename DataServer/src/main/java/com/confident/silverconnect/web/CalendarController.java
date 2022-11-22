@@ -25,7 +25,9 @@ public class CalendarController {
     @GetMapping("/api/calendar/{userId}/month/{month}")
     public ResponseEntity<List<ScheduleSimpleDto>> getMonthlySchedulesByUserId(@PathVariable(value = "userId") Long userid,
                                                                                @PathVariable(value = "month") Integer month) {
-        return ResponseEntity.ok().build();
+        List<ScheduleSimpleDto> scheduleSimpleDtos = scheduleService.getScheduleSimpleDtoByUserIdAndMonth(userid, month);
+
+        return ResponseEntity.ok(scheduleSimpleDtos);
     }
 
     @Operation(summary = "특정 id의 스케줄 캘린더 포멧 조회")
