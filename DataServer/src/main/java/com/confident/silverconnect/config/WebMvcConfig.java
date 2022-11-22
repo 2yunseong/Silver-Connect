@@ -1,4 +1,4 @@
-package com.confident.silverconnect.domain.config;
+package com.confident.silverconnect.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;

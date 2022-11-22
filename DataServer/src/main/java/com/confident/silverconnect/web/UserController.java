@@ -1,7 +1,7 @@
 package com.confident.silverconnect.web;
 
 import com.confident.silverconnect.domain.User.User;
-import com.confident.silverconnect.web.service.UserService;
+import com.confident.silverconnect.service.UserService;
 import com.confident.silverconnect.dto.user.UserFindDto;
 import com.confident.silverconnect.dto.user.UserUpdateRequestDto;
 import io.swagger.v3.oas.annotations.Operation;

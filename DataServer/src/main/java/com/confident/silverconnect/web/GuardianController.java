@@ -3,7 +3,7 @@ package com.confident.silverconnect.web;
 import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.dto.guardian.GuardianFindDto;
 import com.confident.silverconnect.dto.guardian.GuardianUpdateRequestDto;
-import com.confident.silverconnect.web.service.GuardianService;
+import com.confident.silverconnect.service.GuardianService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

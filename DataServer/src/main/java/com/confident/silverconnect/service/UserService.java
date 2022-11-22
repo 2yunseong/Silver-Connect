@@ -1,4 +1,4 @@
-package com.confident.silverconnect.web.service;
+package com.confident.silverconnect.service;
 
 
 import com.confident.silverconnect.domain.User.User;

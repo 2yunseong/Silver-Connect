@@ -1,4 +1,4 @@
-package com.confident.silverconnect.domain.config;
+package com.confident.silverconnect.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
