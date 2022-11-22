@@ -29,7 +29,7 @@ public class GuardianController {
     })
     @PostMapping("/api/guardian")
     public ResponseEntity<Guardian> singup(GuardianUpdateRequestDto guardianUpdateRequestDto){
-        String phoneNumber = guardianUpdateRequestDto.getPhoneNumber();
+        String phoneNumber = guardianUpdateRequestDto.getResidentPhoneNumber();
         Household household = householdService.getByPhoneNumber(phoneNumber);
         Guardian guardian = guardianService.createGuardian(guardianUpdateRequestDto.toEntity(household));
         return new ResponseEntity<>(guardian, HttpStatus.OK);
