@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ScheduleSaveDto {
+public class ScheduleCreateDto {
 
     @NotNull
     private Long userId;
@@ -22,7 +22,7 @@ public class ScheduleSaveDto {
     private Long epochTime;
 
     @Builder
-    public ScheduleSaveDto(Long userId, Long householdId, Long epochTime) {
+    public ScheduleCreateDto(Long userId, Long householdId, Long epochTime) {
         this.userId = userId;
         this.householdId = householdId;
         this.epochTime = epochTime;

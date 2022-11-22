@@ -1,6 +1,6 @@
 package com.confident.silverconnect.web;
 
-import com.confident.silverconnect.dto.schedule.ScheduleSaveDto;
+import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -17,19 +17,19 @@ public class ScheduleManagementController {
 
     @Operation(summary = "스케줄 추가")
     @PostMapping("/api/schedule")
-    public ResponseEntity<Long> createSchedule(@Valid @ModelAttribute ScheduleSaveDto scheduleSaveDto) {
+    public ResponseEntity<Long> createSchedule(@Valid @ModelAttribute ScheduleCreateDto scheduleCreateDto) {
         return ResponseEntity.ok().build();
     }
 
     @Operation(summary = "스케줄 모든 정보 조회")
     @GetMapping("/api/schedule/{scheduleId}")
-    public ResponseEntity<ScheduleSaveDto> getScheduleDtoByScheduleId(@PathVariable(value = "scheduleId") Long scheduleId) {
+    public ResponseEntity<ScheduleCreateDto> getScheduleDtoByScheduleId(@PathVariable(value = "scheduleId") Long scheduleId) {
         return ResponseEntity.ok().build();
     }
 
     @Operation(summary = "스케줄 수정")
     @PutMapping("/api/schedule")
-    public ResponseEntity<Long> updateSchedule(@Valid @ModelAttribute ScheduleSaveDto scheduleSaveDto) {
+    public ResponseEntity<Long> updateSchedule(@Valid @ModelAttribute ScheduleCreateDto scheduleCreateDto) {
         return ResponseEntity.ok().build();
     }
 
