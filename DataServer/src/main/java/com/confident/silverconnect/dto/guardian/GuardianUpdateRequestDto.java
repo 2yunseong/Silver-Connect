@@ -10,6 +10,8 @@ public class GuardianUpdateRequestDto {
     private Integer age;
     private String phoneNumber;
 
+    private String residentPhoneNumber;
+
     public Guardian toEntity(Household household){
         return Guardian.builder()
                 .household(household)

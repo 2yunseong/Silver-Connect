@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25708d61-64c9-42ae-87c2-5bf6cdfa8a1d" name="Changes" comment="" />
+    <list default="true" id="4a9098ac-78ee-41aa-a3a2-8f1b4bd8c9f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/guardian/GuardianUpdateRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/guardian/GuardianUpdateRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/service/GuardianService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/service/GuardianService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/web/GuardianController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/web/GuardianController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="TaskManager">
     <servers />
   </component>
