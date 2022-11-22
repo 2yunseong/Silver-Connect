@@ -12,7 +12,6 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 public class HouseholdCreateDto {
-
     @NotNull
     private String address;
     @NotNull

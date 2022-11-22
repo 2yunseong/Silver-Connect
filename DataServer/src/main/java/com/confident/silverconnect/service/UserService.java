@@ -116,5 +116,9 @@ public class UserService {
         user.update(userUpdateRequestDto);
         return user;
     }
+
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
 }
 
