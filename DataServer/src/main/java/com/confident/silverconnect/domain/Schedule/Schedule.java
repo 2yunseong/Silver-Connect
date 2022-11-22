@@ -2,7 +2,6 @@ package com.confident.silverconnect.domain.Schedule;
 
 import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.User.User;
-import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
