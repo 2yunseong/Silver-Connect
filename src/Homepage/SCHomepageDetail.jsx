@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function SCHomepageDetail() {
+function SCHomepageDetail(prop) {
   return (
     <div className="w-2/5 flex items-left flex-col mt-6 ml-6">
       <div className="text-4xl font-bold my-16">정보</div>
