@@ -1,11 +1,7 @@
 package com.confident.silverconnect.dto.user;
 
-import com.sun.istack.NotNull;
+import com.confident.silverconnect.domain.User.User;
 import lombok.Getter;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Getter
 public class UserUpdateRequestDto {
@@ -13,4 +9,13 @@ public class UserUpdateRequestDto {
     private String password;
     private String name;
     private String phoneNumber;
+
+    public User toEntity() {
+        return User.builder().
+                email(email)
+                .password(password)
+                .name(name)
+                .phoneNumber(phoneNumber)
+                .build();
+    }
 }

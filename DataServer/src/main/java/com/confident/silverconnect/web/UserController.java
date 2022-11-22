@@ -20,6 +20,16 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
+    @Operation(summary = "회원가입", description = "회원가입 로직")
+    @ApiResponses({
+            @ApiResponse(responseCode = "User", description = "회원가입 User")
+    })
+    @PostMapping("/api/user")
+    public ResponseEntity<User> singup(UserUpdateRequestDto userUpdateRequestDto){
+        User user = userService.createUser(userUpdateRequestDto.toEntity());
+        return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+
     @GetMapping("/api/user/all/{page}")
     public ResponseEntity<List<User>> findUserAll(@PathVariable int page){
         List<User> listUser = userService.findAll();
@@ -51,7 +61,7 @@ public class UserController {
     @ApiResponses({
             @ApiResponse(description = "이름으로 회원 조회")
     })
-    @GetMapping("/api/usernames/{userName}")
+    @GetMapping("/api/user/{userName}")
     public ResponseEntity<List<User>> findUserByUserName(@PathVariable String userName){
         List<User> userListByUserName = userService.findUserByUserName(userName);
         return new ResponseEntity<>(userListByUserName, HttpStatus.OK);

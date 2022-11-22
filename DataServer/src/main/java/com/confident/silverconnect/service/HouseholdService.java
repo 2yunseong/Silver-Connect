@@ -19,13 +19,18 @@ public class HouseholdService {
 
     public long createHousehold(HouseholdCreateDto householdCreateDto) {
         Household household = householdCreateDto.toEntity();
-
         return householdRepository.save(household).getId();
     }
 
     public Household getHouseholdById(long id) {
         return householdRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_HOUSEHOLD_MESSAGE));
+    }
+
+    public Household getByPhoneNumber(String phoneNumber) {
+        return householdRepository.getByPhoneNumber(phoneNumber)
+                .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_HOUSEHOLD_MESSAGE));
+
     }
 
     @Transactional

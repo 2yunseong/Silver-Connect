@@ -54,4 +54,8 @@ public class GuardianService {
         if( guardianRepository.findById(userId).isEmpty() ) throw new IllegalArgumentException(NOT_FOUND_GUARDIAN_MESSAGE);
         guardianRepository.deleteById(userId);
     }
+
+    public Guardian createGuardian(Guardian guardian) {
+        return guardianRepository.save(guardian);
+    }g
 }
