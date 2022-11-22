@@ -2,6 +2,7 @@ package com.confident.silverconnect.domain.Schedule;
 
 import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.User.User;
+import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
@@ -34,6 +35,13 @@ public class Schedule {
 
     @Builder
     public Schedule(User user, Household household, LocalDateTime dateTime) {
+        this.user = user;
+        this.household = household;
+        this.dateTime = dateTime;
+    }
+
+
+    public void update(User user, Household household, LocalDateTime dateTime) {
         this.user = user;
         this.household = household;
         this.dateTime = dateTime;

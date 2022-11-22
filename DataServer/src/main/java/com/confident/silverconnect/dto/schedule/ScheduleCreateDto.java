@@ -1,5 +1,7 @@
 package com.confident.silverconnect.dto.schedule;
 
+import com.confident.silverconnect.domain.Schedule.Schedule;
+import com.confident.silverconnect.util.EpochTime;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,12 +21,18 @@ public class ScheduleCreateDto {
     private Long householdId;
 
     @NotNull
-    private Long epochTime;
+    private Long epochSecond;
 
     @Builder
-    public ScheduleCreateDto(Long userId, Long householdId, Long epochTime) {
+    public ScheduleCreateDto(Long userId, Long householdId, Long epochSecond) {
         this.userId = userId;
         this.householdId = householdId;
-        this.epochTime = epochTime;
+        this.epochSecond = epochSecond;
+    }
+
+    public ScheduleCreateDto(Schedule schedule) {
+        this.userId = schedule.getUser().getId();
+        this.householdId = schedule.getHousehold().getId();
+        this.epochSecond = EpochTime.toEpochSecond(schedule.getDateTime());
     }
 }
