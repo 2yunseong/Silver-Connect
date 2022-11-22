@@ -6,7 +6,7 @@ build/
 !**/src/test/**/build/
 images/
 src/main/resources
-
+.idea/
  src/main/generated
 
  ### STS ###

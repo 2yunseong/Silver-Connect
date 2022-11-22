@@ -20,6 +20,10 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
+    @Operation(summary = "회원가입", description = "회원가입 로직")
+    @ApiResponses({
+            @ApiResponse(responseCode = "User", description = "회원가입 User")
+    })
     @PostMapping("/api/user")
     public ResponseEntity<User> singup(UserUpdateRequestDto userUpdateRequestDto){
         User user = userService.createUser(userUpdateRequestDto.toEntity());

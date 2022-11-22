@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a9098ac-78ee-41aa-a3a2-8f1b4bd8c9f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cf536049df6628827cae358c68ecc2c4e46f7f6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/household/HouseholdCreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/household/HouseholdCreateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/user/UserUpdateRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/dto/user/UserUpdateRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/confident/silverconnect/web/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +121,7 @@
       <workItem from="1668747644792" duration="3422000" />
       <workItem from="1668752208694" duration="1741000" />
       <workItem from="1669015301910" duration="9924000" />
-      <workItem from="1669117631124" duration="865000" />
+      <workItem from="1669117631124" duration="1192000" />
     </task>
     <servers />
   </component>
