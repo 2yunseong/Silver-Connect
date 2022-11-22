@@ -3,8 +3,10 @@ package com.confident.silverconnect.service;
 import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.Household.HouseholdRepository;
 import com.confident.silverconnect.dto.household.HouseholdCreateDto;
+import com.confident.silverconnect.dto.household.HouseholdUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -24,5 +26,17 @@ public class HouseholdService {
     public Household getHouseholdById(long id) {
         return householdRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_HOUSEHOLD_MESSAGE));
+    }
+
+    @Transactional
+    public Household updateHouseholdById(long id, HouseholdUpdateRequestDto householdUpdateRequestDto) {
+        Household household =  getHouseholdById(id);
+        household.update(householdUpdateRequestDto);
+
+        return household;
+    }
+
+    public void deleteHouseholdById(long id) {
+        householdRepository.deleteById(id);
     }
 }

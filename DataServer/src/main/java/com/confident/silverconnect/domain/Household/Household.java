@@ -1,5 +1,6 @@
 package com.confident.silverconnect.domain.Household;
 
+import com.confident.silverconnect.dto.household.HouseholdUpdateRequestDto;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
@@ -41,5 +42,13 @@ public class Household {
         this.residentName = residentName;
         this.residentAge = residentAge;
         this.residentPhoneNumber = residentPhoneNumber;
+    }
+
+    public void update(HouseholdUpdateRequestDto householdUpdateRequestDto) {
+        this.address = householdUpdateRequestDto.getAddress();
+        this.residentName = householdUpdateRequestDto.getResidentName();
+        this.residentAge = householdUpdateRequestDto.getResidentAge();
+        this.residentPhoneNumber = householdUpdateRequestDto.getResidentPhoneNumber();
+
     }
 }
