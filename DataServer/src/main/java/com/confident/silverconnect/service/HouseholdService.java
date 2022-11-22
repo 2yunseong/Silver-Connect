@@ -15,7 +15,11 @@ public class HouseholdService {
 
     public long createHousehold(HouseholdCreateDto householdCreateDto) {
         Household household = householdCreateDto.toEntity();
-
         return householdRepository.save(household).getId();
+    }
+
+    public Household getByPhoneNumber(String phoneNumber) {
+        return householdRepository.getByPhoneNumber(phoneNumber).orElseThrow(() -> new IllegalArgumentException("해당하는 household가 없습니다"));
+
     }
 }
