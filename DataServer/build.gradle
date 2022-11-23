@@ -37,7 +37,11 @@ dependencies {
 
 	// Swagger
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
+	// Spring actuator
+	jar { enabled = false }
 }
+
+
 
 
 test {
