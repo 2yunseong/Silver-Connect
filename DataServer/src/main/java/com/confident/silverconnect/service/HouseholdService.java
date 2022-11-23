@@ -28,7 +28,7 @@ public class HouseholdService {
     }
 
     public Household getByPhoneNumber(String phoneNumber) {
-        return householdRepository.getByPhoneNumber(phoneNumber)
+        return householdRepository.getByResidentPhoneNumber(phoneNumber)
                 .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_HOUSEHOLD_MESSAGE));
 
     }
