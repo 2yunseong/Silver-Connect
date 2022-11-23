@@ -25,8 +25,6 @@ Gsrc/main/java/com/confident/silverconnect/domain/guardian/Guardian.java,7/c/7c
 Tsrc/main/java/com/confident/silverconnect/dto/guardian/GuardianUpdateRequestDto.java,9/1/91ce5e35e6fd47f04400b21f6c4e36a8ac788a2e
 {
 Ksrc/main/java/com/confident/silverconnect/dto/guardian/GuardianFindDto.java,7/5/75e95f5efaf965bb109f659b1afdda754ee7dc16
-y
-Isrc/main/java/com/confident/silverconnect/domain/Household/Household.java,d/9/d9556d1c342a3f192fb02cb79197c3da18c445e5
 ƒ
 Ssrc/main/java/com/confident/silverconnect/domain/Household/HouseholdRepository.java,8/4/843b6da8ed29c8de4b7698a9e805df6b2f096b51
 q
