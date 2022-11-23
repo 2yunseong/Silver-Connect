@@ -1,17 +1,18 @@
 import { useEffect } from 'react';
 
 function SCHomepageDetail(prop) {
+  const data = prop.data;
   return (
     <div className="w-2/5 flex items-left flex-col mt-6 ml-6">
       <div className="text-4xl font-bold my-16">정보</div>
-      <DetailElement title={'이름'} data={'박봉선'} />
-      <DetailElement title={'주소'} data={'광주광역시 북구 OO로 OO-OO'} />
-      <DetailElement title={'연세'} data={'OO세'} />
+      <DetailElement title={'이름'} data={data.name} />
+      <DetailElement title={'주소'} data={data.address} />
+      <DetailElement title={'연세'} data={data.age} />
       <div className="border-y-2 mr-6 my-4" />
-      <DetailElement title={'보호자'} data={'김선희'} />
-      <DetailElement title={'연락처'} data={'010-1234-5678'} />
+      <DetailElement title={'보호자'} data={data.guardian} />
+      <DetailElement title={'연락처'} data={data.guardianPhoneNumber} />
       <div className="border-y-2 mr-6 my-4" />
-      <DetailAlertElement title={'위험도'} type={'안전'} />
+      <DetailAlertElement title={'위험도'} type={data.risk} />
     </div>
   );
 }
