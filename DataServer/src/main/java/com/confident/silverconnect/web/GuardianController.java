@@ -82,16 +82,6 @@ public class GuardianController {
         return new ResponseEntity<>(guardianByYearAndGuardianName, HttpStatus.OK);
     }
 
-    @Operation(summary = "Email로 보호자 조회", description = "이메일로 보호자 조회")
-    @ApiResponses({
-            @ApiResponse(description = "Role에 따른 보호자 조횐 return")
-    })
-    @GetMapping("/api/guardian/email/{guardianEmail}")
-    public ResponseEntity<Guardian> findGuardianByEmail(@PathVariable String guardianEmail) {
-        Guardian guardianByGuardianEmail = guardianService.findByEmail(guardianEmail);
-        return new ResponseEntity<>(guardianByGuardianEmail,HttpStatus.OK);
-    }
-
     @Operation(summary = "보호자정보 수정", description = "보호자정보 수정")
     @ApiResponses({
             @ApiResponse(description = "Role에 따른 보호자 조회 return")

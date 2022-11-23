@@ -30,8 +30,7 @@ public class UserService {
 
     @Transactional
     public User setPassword(UserPasswordUpdateDto userPasswordUpdateDto) {
-        User user = userRepository.findUserByUserNameAndYear(userPasswordUpdateDto.getUserName(), userPasswordUpdateDto.getYear())
-                .orElseThrow(() -> new IllegalArgumentException("없는 유저입니다."));
+        User user = userRepository.findByName(userPasswordUpdateDto.getUserName()).get(0);
         user.setPassword(userPasswordUpdateDto.getPassword());
         return userRepository.save(user);
     }
@@ -62,7 +61,7 @@ public class UserService {
      */
     @Transactional
     public List<User> findUserByUserName(String name) {
-        List<User> users = userRepository.findByUserName(name);
+        List<User> users = userRepository.findByName(name);
         if (users.isEmpty()) {
             throw new IllegalArgumentException(NOT_FOUND_USER_MESSAGE);
         }
@@ -72,7 +71,7 @@ public class UserService {
 
     @Transactional
     public User findUserByYearAndUserName(String name, Long phoneNumber) {
-        List<User> findUser = userRepository.findByUserName(name).stream()
+        List<User> findUser = userRepository.findByName(name).stream()
                 .filter(m -> m.getPhoneNumber().equals(phoneNumber))
                 .collect(Collectors.toList());
         if (findUser.isEmpty()) {

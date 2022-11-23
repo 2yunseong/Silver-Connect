@@ -43,10 +43,6 @@ public class GuardianService {
                 .collect(Collectors.toList()).get(0);
     }
 
-    public Guardian findByEmail(String userEmail) {
-        return guardianRepository.findByEmail(userEmail).get();
-    }
-
     public Guardian findByHouseholdId(long householdId) {
         return guardianRepository.findByHousehold_Id(householdId)
                 .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_GUARDIAN_MESSAGE));
