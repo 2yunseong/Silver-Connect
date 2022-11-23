@@ -1,6 +1,8 @@
 package com.confident.silverconnect.dto.schedule;
 
 import com.confident.silverconnect.domain.Household.Risk;
+import com.confident.silverconnect.domain.Schedule.Schedule;
+import com.confident.silverconnect.util.EpochTime;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,5 +24,12 @@ public class ScheduleSimpleDto {
         this.epochTime = epochTime;
         this.residentName = residentName;
         this.risk = risk;
+    }
+
+    public ScheduleSimpleDto(Schedule schedule) {
+        this.id = schedule.getId();
+        this.epochTime = EpochTime.toEpochSecond(schedule.getDateTime());
+        this.residentName = schedule.getHousehold().getResidentName();
+        this.risk = schedule.getHousehold().getRisk();
     }
 }

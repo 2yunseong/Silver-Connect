@@ -1,6 +1,8 @@
 package com.confident.silverconnect.dto.schedule;
 
 import com.confident.silverconnect.domain.Household.Risk;
+import com.confident.silverconnect.domain.Schedule.Schedule;
+import com.confident.silverconnect.domain.guardian.Guardian;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,5 +34,17 @@ public class ScheduleInfoDto {
         this.guardianName = guardianName;
         this.guardianPhoneNumber = guardianPhoneNumber;
         this.risk = risk;
+    }
+
+    public ScheduleInfoDto(Schedule schedule, Guardian guardian) {
+        this.id = schedule.getId();
+        this.householdId = schedule.getHousehold().getId();
+        this.residentName = schedule.getHousehold().getResidentName();
+        this.residentAge = schedule.getHousehold().getResidentAge();
+        this.householdAddress = schedule.getHousehold().getAddress();
+        this.guardianId = guardian.getId();
+        this.guardianName = guardian.getName();
+        this.guardianPhoneNumber = guardian.getPhoneNumber();
+        this.risk = schedule.getHousehold().getRisk();
     }
 }

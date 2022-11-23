@@ -14,15 +14,19 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class GuardianService {
-    private static final String NOT_FOUND_GUARDIAN_MESSAGE = "해당하는 보호자가 없습니다.";
     private final GuardianRepository guardianRepository;
+
+    private static final String NOT_FOUND_GUARDIAN_MESSAGE = "해당하는 보호자가 없습니다.";
+
+
     public List<Guardian> findAll(Integer page) {
         Pageable pageable = PageRequest.of(page, 20);
         return guardianRepository.findAll(pageable).stream().collect(Collectors.toList());
     }
 
     public Guardian findById(Long userId) {
-        return guardianRepository.findById(userId).orElseThrow(() -> new IllegalArgumentException("없는 유저입니다"));
+        return guardianRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_GUARDIAN_MESSAGE));
     }
 
     public Long countAll() {
@@ -41,6 +45,11 @@ public class GuardianService {
 
     public Guardian findByEmail(String userEmail) {
         return guardianRepository.findByEmail(userEmail).get();
+    }
+
+    public Guardian findByHouseholdId(long householdId) {
+        return guardianRepository.findByHousehold_Id(householdId)
+                .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_GUARDIAN_MESSAGE));
     }
 
     public Guardian update(Long userId, GuardianUpdateRequestDto userUpdateRequestDto) {
