@@ -1,5 +1,6 @@
 package com.confident.silverconnect.service;
 
+import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.domain.guardian.GuardianRepository;
 import com.confident.silverconnect.dto.guardian.GuardianUpdateRequestDto;
@@ -61,5 +62,9 @@ public class GuardianService {
 
     public Guardian createGuardian(Guardian guardian) {
         return guardianRepository.save(guardian);
+    }
+
+    public Guardian findByHoushold(Household household) {
+        return guardianRepository.findByHousehold(household).orElseThrow(() -> new IllegalArgumentException("해당 household가 없습니다."));
     }
 }

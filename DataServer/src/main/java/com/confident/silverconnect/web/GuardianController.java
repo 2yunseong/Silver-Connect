@@ -35,6 +35,20 @@ public class GuardianController {
         return new ResponseEntity<>(guardian, HttpStatus.OK);
     }
 
+
+    @Operation(summary = "household id 로 guardian 조회", description = "household id 로 guardian 조회")
+    @ApiResponses({
+            @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")
+    })
+    @GetMapping("/api/guardian/")
+    public ResponseEntity<Guardian> findByHouseholdId(Integer householdId){
+        Household household = householdService.findById(householdId);
+        Guardian guardian = guardianService.findByHoushold(household);
+        return new ResponseEntity<>(guardian, HttpStatus.OK);
+    }
+
+
+
     @Operation(summary = "보호자 전체 조회", description = "보호자 전체 조회")
     @ApiResponses({
             @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")

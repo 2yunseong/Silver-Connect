@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class HouseholdService {
@@ -44,5 +46,13 @@ public class HouseholdService {
 
     public void deleteHouseholdById(long id) {
         householdRepository.deleteById(id);
+    }
+
+    public Household findById(Integer householdId) {
+        return householdRepository.findById(Long.valueOf(householdId)).orElseThrow(() -> new IllegalArgumentException("해당 household가 존재하지 않습니다."));
+    }
+
+    public Household getByResidentName(String residentName) {
+        return householdRepository.getByResidentName(residentName).orElseThrow(() -> new IllegalArgumentException("해당 household가 존재하지 않습니다."));
     }
 }
