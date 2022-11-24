@@ -3,45 +3,17 @@ import './List.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Add from './Add';
-
-const dummyLists = [
-  {
-    name: '장광팔',
-    address: '광주광역시 북구 호동로 73번길 71',
-    age: '80',
-    phone: '010-0000-0000',
-    supporter: '김선희',
-    supporterPhone: '010-1111-1111',
-  },
-  {
-    name: '최득춘',
-    address: '광주광역시 북구 호동로 77번길 71',
-    age: '93',
-    phone: '010-0000-0000',
-    supporter: '김선희',
-    supporterPhone: '010-1111-1111',
-  },
-  {
-    name: '최길남',
-    address: '광주광역시 북구 호동로 70번길 71',
-    age: '72',
-    phone: '010-0000-0000',
-    supporter: '박미정',
-    supporterPhone: '010-1111-1111',
-  },
-  {
-    name: '이남희',
-    address: '광주광역시 북구 문화로 71',
-    age: '78',
-    phone: '010-0000-0000',
-    supporter: '김영희',
-    supporterPhone: '010-1111-1111',
-  },
-];
+import useSWR from 'swr';
+import fetcher from '../util/fetcher';
 
 const List = () => {
   const [isAddClick, setIsAddClick] = useState(false);
   const navigate = useNavigate();
+
+  const { data, error } = useSWR(
+    'http://133.186.219.125:8080/api/guardian/all/',
+    fetcher
+  );
 
   const onClick = () => {
     navigate('/select');
@@ -50,6 +22,10 @@ const List = () => {
   const onAdd = () => {
     setIsAddClick(() => !isAddClick);
   };
+
+  if (error) return <div>fail read</div>;
+  if (!data) return <div>loading..</div>;
+
   return (
     <div className='table-container flex justify-center items-center flex-col'>
       <table className='text-center'>
@@ -64,14 +40,14 @@ const List = () => {
           </tr>
         </thead>
         <tbody>
-          {dummyLists.map((household) => (
+          {data.map((element) => (
             <tr onClick={onClick} className='text-xl border-b-2'>
-              <td className='py-7'>{household.name}</td>
-              <td className='py-7'>{household.address}</td>
-              <td className='py-7'>{household.age}</td>
-              <td className='py-7'>{household.phone}</td>
-              <td className='py-7'>{household.supporter}</td>
-              <td className='py-7'>{household.supporterPhone}</td>
+              <td className='py-7'>{element.household.residentName}</td>
+              <td className='py-7'>{element.household.address}</td>
+              <td className='py-7'>{element.household.residentAge}</td>
+              <td className='py-7'>{element.household.residentPhoneNumber}</td>
+              <td className='py-7'>{element.name}</td>
+              <td className='py-7'>{element.phoneNumber}</td>
             </tr>
           ))}
         </tbody>
