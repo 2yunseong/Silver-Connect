@@ -35,6 +35,10 @@ public class GuardianController {
         return new ResponseEntity<>(guardian, HttpStatus.OK);
     }
 
+    @Operation(summary = "보호자 전체 조회", description = "보호자 전체 조회")
+    @ApiResponses({
+            @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")
+    })
     @GetMapping("/api/guardian/all/")
     public ResponseEntity<List<Guardian>> findAll(){
         List<Guardian> listGuardian = guardianService.findAll();

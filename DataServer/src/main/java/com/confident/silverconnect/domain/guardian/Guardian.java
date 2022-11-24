@@ -19,7 +19,7 @@ public class Guardian {
     private Long id;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "household_id", nullable = false)
     private Household household;
 
