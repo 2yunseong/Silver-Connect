@@ -19,9 +19,8 @@ public class GuardianService {
     private static final String NOT_FOUND_GUARDIAN_MESSAGE = "해당하는 보호자가 없습니다.";
 
 
-    public List<Guardian> findAll(Integer page) {
-        Pageable pageable = PageRequest.of(page, 20);
-        return guardianRepository.findAll(pageable).stream().collect(Collectors.toList());
+    public List<Guardian> findAll() {
+        return guardianRepository.findAll();
     }
 
     public Guardian findById(Long userId) {

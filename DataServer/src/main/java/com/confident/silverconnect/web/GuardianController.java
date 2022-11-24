@@ -35,9 +35,9 @@ public class GuardianController {
         return new ResponseEntity<>(guardian, HttpStatus.OK);
     }
 
-    @GetMapping("/api/guardian/all/{page}")
-    public ResponseEntity<List<Guardian>> findAll(@PathVariable int page){
-        List<Guardian> listGuardian = guardianService.findAll(page);
+    @GetMapping("/api/guardian/all/")
+    public ResponseEntity<List<Guardian>> findAll(){
+        List<Guardian> listGuardian = guardianService.findAll();
         return new ResponseEntity<>(listGuardian, HttpStatus.OK);
     }
 
