@@ -4,27 +4,29 @@ import useSWR from 'swr';
 
 function SCHomepageDetail({ residentId }) {
   const { data, error } = useSWR(
-    `http://133.186.219.125:8080/api/household/${residentId}`,
+    `http://133.186.219.125:8080/api/guardian/?householdId=${residentId}`,
     fetcher,
   );
-  if (error)
+  if (error) {
     return (
       <div className="w-2/5 flex items-left flex-col mt-6 ml-6">
         failed to load
       </div>
     );
-  if (!data)
+  }
+  if (!data) {
     return (
       <div className="w-2/5 flex items-left flex-col mt-6 ml-6">loading...</div>
     );
+  };
 
   const initalData = {
-    name: data.residentName,
-    age: data.residentAge,
-    address: data.address,
-    guardian: '김선희',
-    guardianPhoneNumber: '010-1234-5678',
-    risk: data.risk,
+    name: data.household.residentName,
+    age: data.household.residentAge,
+    address: data.household.address,
+    guardian: data.name,
+    guardianPhoneNumber: data.phoneNumber,
+    risk: data.household.risk,
   };
 
   return (
