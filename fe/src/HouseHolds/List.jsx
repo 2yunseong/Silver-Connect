@@ -1,6 +1,6 @@
 import Select from './Select';
 import './List.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Add from './Add';
 import useSWR from 'swr';
@@ -15,8 +15,8 @@ const List = () => {
     fetcher
   );
 
-  const onClick = () => {
-    navigate('/select');
+  const onClick = (e) => {
+    console.log(e);
   };
 
   const onAdd = () => {
@@ -40,16 +40,36 @@ const List = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((element) => (
-            <tr onClick={onClick} className='text-xl border-b-2'>
-              <td className='py-7'>{element.household.residentName}</td>
-              <td className='py-7'>{element.household.address}</td>
-              <td className='py-7'>{element.household.residentAge}</td>
-              <td className='py-7'>{element.household.residentPhoneNumber}</td>
-              <td className='py-7'>{element.name}</td>
-              <td className='py-7'>{element.phoneNumber}</td>
-            </tr>
-          ))}
+          {data.map((element) => {
+            return (
+              <tr className='text-xl border-b-2'>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>
+                    {element.household.residentName}
+                  </Link>
+                </td>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>{element.household.address}</Link>
+                </td>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>
+                    {element.household.residentAge}
+                  </Link>
+                </td>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>
+                    {element.household.residentPhoneNumber}
+                  </Link>
+                </td>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>{element.name}</Link>
+                </td>
+                <td className='py-7'>
+                  <Link to={`${element.id}`}>{element.phoneNumber}</Link>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
       <button

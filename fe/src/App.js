@@ -14,8 +14,8 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/homepage' element={<Homepage />} />
         <Route path='/household' element={<List />} />
+        <Route path='/household/:id/' element={<Select />} />
         <Route path='/mypage' element={<MyPage />} />
-        <Route path='/select' element={<Select />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
     </BrowserRouter>
