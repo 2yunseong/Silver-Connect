@@ -16,7 +16,7 @@ function SCHomepageDetail({ residentId }) {
     address: data.address,
     guardian: '김선희',
     guardianPhoneNumber: '010-1234-5678',
-    risk: '안전',
+    risk: data.risk,
   };
 
   return (
@@ -43,23 +43,23 @@ function DetailElement(prop) {
   );
 }
 
-function DetailAlertElement(prop) {
+function DetailAlertElement({type, title}) {
   const types = {
-    안전: '#25BF34',
-    위협: '#FFEA2C',
-    위험: '#ED6400',
-    긴급: '#F31818',
+    SAFE: { color: '#25BF34', string: '안전' },
+    WARN: { color: '#FFEA2C', string: '인지' },
+    DANGER: { color: '#ED6400', string: '위험' },
+    EMERGENCY: { color: '#F31818', string: '긴급' },
   };
   useEffect(() => {
     document.querySelector('#warning-alert').style.backgroundColor =
-      types[prop.type];
+      types[type].color;
   });
   return (
     <div className="flex text-2xl font-semibold my-4">
-      <div className="w-20">{prop.title}</div>
+      <div className="w-20">{title}</div>
       <div className="flex">
         <div className="w-8 h-89 rounded-full mr-2" id="warning-alert" />
-        <div>{prop.type}</div>
+        <div>{types[type].string}</div>
       </div>
     </div>
   );
