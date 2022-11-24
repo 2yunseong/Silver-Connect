@@ -24,8 +24,8 @@ function SCCalender({ householdId, setResidentId }) {
     }
   }, [data, calendarRef, setResidentId]);
 
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (error) return <div className="mx-8 w-3/5">failed to load</div>;
+  if (!data) return <div className="mx-8 w-3/5">loading...</div>;
 
   const initialData = data.map((resident) => {
     return {

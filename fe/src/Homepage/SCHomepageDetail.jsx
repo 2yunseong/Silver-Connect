@@ -7,8 +7,16 @@ function SCHomepageDetail({ residentId }) {
     `http://133.186.219.125:8080/api/household/${residentId}`,
     fetcher,
   );
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (error)
+    return (
+      <div className="w-2/5 flex items-left flex-col mt-6 ml-6">
+        failed to load
+      </div>
+    );
+  if (!data)
+    return (
+      <div className="w-2/5 flex items-left flex-col mt-6 ml-6">loading...</div>
+    );
 
   const initalData = {
     name: data.residentName,
@@ -43,7 +51,7 @@ function DetailElement(prop) {
   );
 }
 
-function DetailAlertElement({type, title}) {
+function DetailAlertElement({ type, title }) {
   const types = {
     SAFE: { color: '#25BF34', string: '안전' },
     WARN: { color: '#FFEA2C', string: '인지' },
