@@ -1,18 +1,35 @@
 import { useEffect } from 'react';
+import fetcher from '../util/fetcher';
+import useSWR from 'swr';
 
-function SCHomepageDetail(prop) {
-  const data = prop.data;
+function SCHomepageDetail({ residentId }) {
+  const { data, error } = useSWR(
+    `http://133.186.219.125:8080/api/household/${residentId}`,
+    fetcher,
+  );
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+
+  const initalData = {
+    name: data.residentName,
+    age: data.residentAge,
+    address: data.address,
+    guardian: '김선희',
+    guardianPhoneNumber: '010-1234-5678',
+    risk: '안전',
+  };
+
   return (
     <div className="w-2/5 flex items-left flex-col mt-6 ml-6">
       <div className="text-4xl font-bold my-16">정보</div>
-      <DetailElement title={'이름'} data={data.name} />
-      <DetailElement title={'주소'} data={data.address} />
-      <DetailElement title={'연세'} data={data.age} />
+      <DetailElement title={'이름'} data={initalData.name} />
+      <DetailElement title={'주소'} data={initalData.address} />
+      <DetailElement title={'연세'} data={initalData.age} />
       <div className="border-y-2 mr-6 my-4" />
-      <DetailElement title={'보호자'} data={data.guardian} />
-      <DetailElement title={'연락처'} data={data.guardianPhoneNumber} />
+      <DetailElement title={'보호자'} data={initalData.guardian} />
+      <DetailElement title={'연락처'} data={initalData.guardianPhoneNumber} />
       <div className="border-y-2 mr-6 my-4" />
-      <DetailAlertElement title={'위험도'} type={data.risk} />
+      <DetailAlertElement title={'위험도'} type={initalData.risk} />
     </div>
   );
 }

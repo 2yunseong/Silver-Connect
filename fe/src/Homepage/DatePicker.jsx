@@ -4,8 +4,8 @@ function DatePicker(prop) {
       <PickerTemplete defaultDate={'2022'} dateUnit={'년'} />
       <PickerTemplete defaultDate={'12'} dateUnit={'월'} />
       <PickerTemplete defaultDate={'1'} dateUnit={'일'} />
-      </div>
-      );
+    </div>
+  );
 }
 
 function PickerTemplete(prop) {
