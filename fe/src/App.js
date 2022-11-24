@@ -4,6 +4,7 @@ import Homepage from './Homepage/Homepage';
 import List from './HouseHolds/List';
 import MyPage from './MyPage/MyPage';
 import Select from './HouseHolds/Select';
+import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/household' element={<List />} />
         <Route path='/mypage' element={<MyPage />} />
         <Route path='/select' element={<Select />} />
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );

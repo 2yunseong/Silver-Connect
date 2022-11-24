@@ -1,6 +1,9 @@
+import profile from './profile.png';
+
 const Edit = () => {
   return (
     <div className='text-2xl font-semibold text-left'>
+      <img className='rounded-full w-40 p-3 m-3' src={profile} alt='profile' />
       <div className='name-element flex py-5'>
         <div className='w-1/3'>이름</div>
         <input className='font-normal w-2/3' placeholder='ex)이윤성' />
