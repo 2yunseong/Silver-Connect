@@ -1,12 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { myPageData } from '../util/dummy';
+import React, { useState } from 'react';
 import LookUp from './Lookup';
 import Edit from './Edit';
 import './MyPage.css';
+import useSWR from 'swr';
+import fetcher from '../util/fetcher';
 
 const MyPage = () => {
-  const [userData, setUserData] = useState({});
   const [isEdit, setIsEdit] = useState(false);
+
+  const { data, error } = useSWR(
+    'http://133.186.219.125:8080/api/user/0',
+    fetcher
+  );
+
+  if (error) return <div>fail read</div>;
+  if (!data) return <div>loading..</div>;
 
   const onToggle = () => {
     if (isEdit) {
@@ -15,9 +23,7 @@ const MyPage = () => {
     setIsEdit(() => !isEdit);
   };
 
-  useEffect(() => {
-    setUserData(() => myPageData);
-  }, []);
+  console.log(data);
 
   return (
     <div className='flex flex-col w-3/5 h-2/5 relative top-36 left-80 border text-center pt-5 pb-20 px-20 rounded-lg'>
@@ -33,11 +39,7 @@ const MyPage = () => {
       {isEdit ? (
         <Edit />
       ) : (
-        <LookUp
-          name={userData.name}
-          phone={userData.phone}
-          email={userData.email}
-        />
+        <LookUp name={data.name} phone={data.phone} email={data.email} />
       )}
     </div>
   );
