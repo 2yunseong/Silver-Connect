@@ -5,6 +5,7 @@ import List from './HouseHolds/List';
 import MyPage from './MyPage/MyPage';
 import Select from './HouseHolds/Select';
 import SignUp from './SignUp/SignUp';
+import Login from './Login/Login';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/household/:id/' element={<Select />} />
         <Route path='/mypage' element={<MyPage />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
