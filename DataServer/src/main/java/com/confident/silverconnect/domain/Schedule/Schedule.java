@@ -25,7 +25,7 @@ public class Schedule {
     private User user;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "household_id", nullable = false)
     private Household household;
 
