@@ -2,12 +2,13 @@ import { useNavigate } from 'react-router-dom';
 import useInput from '../Hooks/useInput';
 import './Login.css';
 
-const Login = () => {
+const Login = ({ setIsLogin }) => {
   const navigate = useNavigate();
   const email = useInput();
   const password = useInput();
 
   const onLogin = () => {
+    setIsLogin(true);
     navigate('/');
   };
 
