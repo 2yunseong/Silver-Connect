@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useSWR from 'swr';
 import fetcher from '../util/fetcher';
 
 const Select = () => {
   const params = useParams();
+  const navigate = useNavigate();
   const { data, error } = useSWR(
     `http://133.186.219.125:8080/api/guardian/${params.id}`,
     fetcher
@@ -14,7 +15,12 @@ const Select = () => {
 
   return (
     <div className='flex flex-col w-3/5 h-2/5 relative top-24 left-80 border text-center pt-5 pb-20 px-20 rounded-lg font-semibold'>
-      <button className='relative right-80'>{`<`}</button>
+      <button
+        className='relative right-80'
+        onClick={() => {
+          navigate('/household');
+        }}
+      >{`<`}</button>
       <h2 className='font-bold text-3xl mb-8'>정보</h2>
       <div className='flex py-3'>
         <div className='w-1/3'>이름</div>
