@@ -4,9 +4,15 @@ import Edit from './Edit';
 import './MyPage.css';
 import useSWR from 'swr';
 import fetcher from '../util/fetcher';
+import useInput from '../Hooks/useInput';
+import { useNavigate } from 'react-router-dom';
 
 const MyPage = () => {
+  const navigate = useNavigate();
   const [isEdit, setIsEdit] = useState(false);
+  const newPassword = useInput();
+  const newName = useInput();
+  const newPhone = useInput();
 
   const { data, error } = useSWR(
     'http://133.186.219.125:8080/api/user/0',
@@ -19,6 +25,10 @@ const MyPage = () => {
   const onToggle = () => {
     if (isEdit) {
       // edit logic => to server... send data
+      navigate('/');
+      alert('변경 완료!');
+
+      return;
     }
     setIsEdit(() => !isEdit);
   };
@@ -37,7 +47,13 @@ const MyPage = () => {
         </button>
       </div>
       {isEdit ? (
-        <Edit />
+        <Edit
+          name={data.name}
+          phone={data.phoneNumber}
+          changeName={newName.onChange}
+          changePhone={newPhone.onChange}
+          changePassword={newPassword.onChange}
+        />
       ) : (
         <LookUp name={data.name} phone={data.phone} email={data.email} />
       )}

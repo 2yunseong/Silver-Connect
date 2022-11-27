@@ -29,7 +29,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className='sign-up-container mx-auto my-10 w-4/5 justify-center text-center rounded-lg border'>
+    <div className='sign-up-container mx-auto my-10 justify-center text-center rounded-lg border'>
       <h1 className='font-bold text-5xl m-20'>회원가입</h1>
       <div className='flex flex-col w-100'>
         <div className='flex justify-between text-justify w-2/3 mx-auto text-3xl my-6'>
