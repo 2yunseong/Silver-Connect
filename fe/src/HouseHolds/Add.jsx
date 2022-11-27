@@ -8,13 +8,6 @@ const Add = ({ isAddClick, setIsAddClick }) => {
   const guardianName = useInput();
   const guardianPhone = useInput();
 
-  // {
-  //   "name": "string",
-  //   "age": 0,
-  //   "phoneNumber": "string",
-  //   "residentPhoneNumber": "string"
-  // }
-
   const onClick = () => {
     fetch('http://133.186.219.125:8080/api/household', {
       method: 'POST',
