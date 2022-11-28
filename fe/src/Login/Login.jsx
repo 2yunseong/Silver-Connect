@@ -12,24 +12,29 @@ const Login = ({ setIsLogin }) => {
     navigate('/');
   };
 
+  const onSignUp = () => {
+    navigate('/signup');
+  };
+
   return (
-    <div className='login-container mx-auto my-10 w-4/5 justify-center text-center rounded-lg border'>
-      <h1 className='font-bold text-5xl m-20'>로그인</h1>
-      <div className='flex flex-col w-100'>
-        <div className='flex justify-between text-justify w-2/3 mx-auto text-3xl my-6'>
-          <span className='w-1/3'>이메일(ID):</span>
+    <div className='login-container mx-auto justify-center text-center rounded-lg border shadow-lg'>
+      <h1 className='font-bold text-5xl my-16'>로그인</h1>
+      <div className='flex flex-col w-full mx-auto my-0'>
+        <div className='flex justify-center w-full mx-auto my-6 text-2xl'>
+          <span className='font-semibold'>이메일(ID):</span>
           <input
-            className='w-2/3 border'
+            className='border-b pb-2'
             type='text'
             placeholder='example@jnu.ac.kr'
             onChange={email.onChange}
             value={email.value}
           />
         </div>
-        <div className='flex justify-between text-justify w-2/3 mx-auto text-3xl my-6'>
-          <span className='w-1/3'>비밀번호:</span>
+
+        <div className='flex justify-center w-full mx-auto my-6 text-2xl'>
+          <span className='font-semibold'>비밀번호:</span>
           <input
-            className='w-2/3 border'
+            className='border-b pb-2'
             type='password'
             placeholder='비밀번호'
             onChange={password.onChange}
@@ -37,10 +42,16 @@ const Login = ({ setIsLogin }) => {
           />
         </div>
         <button
-          className='text-3xl text-white bg-blue-700 border-blue rounded-lg w-36 mx-auto my-10 h-12'
+          className='text-white bg-blue-500 border-blue rounded-xl w-80 mx-auto my-6 h-10'
           onClick={onLogin}
         >
           로그인
+        </button>
+        <button
+          className='text-white bg-blue-500 border-blue rounded-xl w-80 mx-auto mt-3 mb-20 h-10'
+          onClick={onSignUp}
+        >
+          회원가입
         </button>
       </div>
     </div>
