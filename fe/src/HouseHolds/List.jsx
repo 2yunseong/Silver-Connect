@@ -1,36 +1,32 @@
-import Select from './Select';
-import './List.css';
-import { useNavigate, Link } from 'react-router-dom';
-import { useState } from 'react';
-import Add from './Add';
+import { Link } from 'react-router-dom';
 import useSWR from 'swr';
+
 import fetcher from '../util/fetcher';
+import './List.css';
 
 const List = () => {
-  const [isAddClick, setIsAddClick] = useState(false);
-  const navigate = useNavigate();
+  const types = {
+    SAFE: '안전',
+    WARN: '인지',
+    DANGER: '위험',
+    EMERGENCY: '긴급',
+  };
 
   const { data, error } = useSWR(
     'http://133.186.219.125:8080/api/guardian/all/',
     fetcher
   );
 
-  const onClick = (e) => {
-    console.log(e);
-  };
-
-  const onAdd = () => {
-    setIsAddClick(() => !isAddClick);
-  };
-
   if (error) return <div>fail read</div>;
   if (!data) return <div>loading..</div>;
 
   return (
-    <div className='table-container flex justify-center items-center flex-col'>
+    <div className='table-container flex justify-center items-center flex-col border rounded-lg py-10 shadow-lg'>
+      <h1 className='font-bold text-5xl py-10'>관리 가구 목록</h1>
       <table className='text-center'>
         <thead>
           <tr className='font-bold text-base text-slate-400'>
+            <td className='px-10'>위험도</td>
             <td className='px-10'>이름</td>
             <td className='px-10'>주소</td>
             <td className='px-10'>연세</td>
@@ -42,7 +38,15 @@ const List = () => {
         <tbody>
           {data.map((element) => {
             return (
-              <tr className='text-xl border-b-2'>
+              <tr className='text-xl border-b-2 px-5'>
+                <td className='py-7'>
+                  <div className='flex'>
+                    <div
+                      className={`w-7 h-89 rounded-full mr-2 ${element.household.risk}`}
+                    />
+                    <div>{types[element.household.risk]}</div>
+                  </div>
+                </td>
                 <td className='py-7'>
                   <Link to={`${element.id}`}>
                     {element.household.residentName}
@@ -72,15 +76,6 @@ const List = () => {
           })}
         </tbody>
       </table>
-      <button
-        className='m-8 px-8 py-2 bg-blue-600 rounded-lg text-white'
-        onClick={onAdd}
-      >
-        추가
-      </button>
-      {isAddClick && (
-        <Add isAddClick={isAddClick} setIsAddClick={setIsAddClick} />
-      )}
     </div>
   );
 };
