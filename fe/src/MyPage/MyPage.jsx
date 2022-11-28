@@ -15,7 +15,7 @@ const MyPage = () => {
   const newPhone = useInput();
 
   const { data, error } = useSWR(
-    'http://133.186.219.125:8080/api/user/0',
+    `http://133.186.219.125:8080/api/user?id=1`,
     fetcher
   );
 
@@ -36,12 +36,12 @@ const MyPage = () => {
   console.log(data);
 
   return (
-    <div className='flex flex-col w-3/5 h-2/5 relative top-36 left-80 border text-center pt-5 pb-20 px-20 rounded-lg'>
-      <div className='flex justify-between py-5'>
-        <h2 className='font-bold text-3xl'>마이 페이지</h2>
+    <div className='my-page-container flex justify-center items-center flex-col border rounded-lg py-10 shadow-lg'>
+      <div className='flex justify-between py-5 px-12 w-full'>
+        <h2 className='font-bold text-4xl'>내 정보</h2>
         <button
           onClick={onToggle}
-          className='px-4 py-1 bg-blue-600 rounded-lg text-white'
+          className='px-7 py-1 bg-blue-600 rounded-lg text-white'
         >
           {isEdit ? '완료' : '변경'}
         </button>
@@ -55,7 +55,7 @@ const MyPage = () => {
           changePassword={newPassword.onChange}
         />
       ) : (
-        <LookUp name={data.name} phone={data.phone} email={data.email} />
+        <LookUp name={data.name} phone={data.phoneNumber} email={data.email} />
       )}
     </div>
   );
