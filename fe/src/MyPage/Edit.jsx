@@ -2,8 +2,8 @@ import profile from './profile.png';
 
 const Edit = ({ name, phone, changeName, changePhone, changePassword }) => {
   return (
-    <div className='text-2xl font-semibold text-left'>
-      <img className='rounded-full w-40 p-3 m-3' src={profile} alt='profile' />
+    <div className='text-normal font-semibold text-left w-4/5'>
+      <img className='rounded-full w-40 my-5' src={profile} alt='profile' />
       <div className='name-element flex py-5'>
         <div className='w-1/3'>이름</div>
         <input
@@ -23,7 +23,7 @@ const Edit = ({ name, phone, changeName, changePhone, changePassword }) => {
         />
       </div>
       <div className='flex py-5'>
-        <div className='w-1/3'>변경할 비밀번호</div>
+        <div className='w-1/3'>새 비밀번호:</div>
         <input
           className='font-normal w-2/3'
           placeholder='변경할 비밀번호 입력..'
@@ -32,7 +32,7 @@ const Edit = ({ name, phone, changeName, changePhone, changePassword }) => {
         />
       </div>
       <div className='flex py-5'>
-        <div className='w-1/3'>변경할 비밀번호 확인</div>
+        <div className='w-1/3'>비밀번호 확인:</div>
         <input
           className='font-normal w-2/3'
           placeholder='변경할 비밀번호 확인'
