@@ -1,0 +1,17 @@
+name: lightgbm
+version: 24k7zkto3oezeaav
+module: bentoml.lightgbm
+labels: {}
+options: {}
+metadata: {}
+context:
+  framework_name: lightgbm
+  framework_versions:
+    lightgbm: 3.3.3
+  bentoml_version: 1.0.10
+  python_version: 3.8.10
+signatures:
+  predict:
+    batchable: false
+api_version: v1
+creation_time: '2022-11-28T05:16:40.379236+00:00'
