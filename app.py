@@ -17,6 +17,9 @@ def determine(x):
 
 app = Flask(__name__) 
 #load the saved model
+host_addr = "0.0.0.0"
+port_num = "8080"
+
 def load_model(): 
     return pickle.load(open('lgb.pkl', 'rb')) #home
 @app.route('/')
@@ -38,5 +41,5 @@ def predict():
     return str(result.get(0))
 
 if __name__ == "__main__":
-    port=int(os.environ.get('PORT',5000))
-    app.run(port=port,debug=True,use_reloader=False)
+    # port=int(os.environ.get('PORT',5000))
+    app.run(host=host_addr, port=port,debug=True,use_reloader=False)
