@@ -1,5 +1,6 @@
 package com.confident.silverconnect.service;
 
+import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.domain.guardian.GuardianRepository;
 import com.confident.silverconnect.dto.guardian.GuardianUpdateRequestDto;
@@ -19,9 +20,8 @@ public class GuardianService {
     private static final String NOT_FOUND_GUARDIAN_MESSAGE = "해당하는 보호자가 없습니다.";
 
 
-    public List<Guardian> findAll(Integer page) {
-        Pageable pageable = PageRequest.of(page, 20);
-        return guardianRepository.findAll(pageable).stream().collect(Collectors.toList());
+    public List<Guardian> findAll() {
+        return guardianRepository.findAll();
     }
 
     public Guardian findById(Long userId) {
@@ -62,5 +62,9 @@ public class GuardianService {
 
     public Guardian createGuardian(Guardian guardian) {
         return guardianRepository.save(guardian);
+    }
+
+    public Guardian findByHoushold(Household household) {
+        return guardianRepository.findByHousehold(household).orElseThrow(() -> new IllegalArgumentException("해당 household가 없습니다."));
     }
 }

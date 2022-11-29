@@ -35,9 +35,27 @@ public class GuardianController {
         return new ResponseEntity<>(guardian, HttpStatus.OK);
     }
 
-    @GetMapping("/api/guardian/all/{page}")
-    public ResponseEntity<List<Guardian>> findAll(@PathVariable int page){
-        List<Guardian> listGuardian = guardianService.findAll(page);
+
+    @Operation(summary = "household id 로 guardian 조회", description = "household id 로 guardian 조회")
+    @ApiResponses({
+            @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")
+    })
+    @GetMapping("/api/guardian/")
+    public ResponseEntity<Guardian> findByHouseholdId(Integer householdId){
+        Household household = householdService.findById(householdId);
+        Guardian guardian = guardianService.findByHoushold(household);
+        return new ResponseEntity<>(guardian, HttpStatus.OK);
+    }
+
+
+
+    @Operation(summary = "보호자 전체 조회", description = "보호자 전체 조회")
+    @ApiResponses({
+            @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")
+    })
+    @GetMapping("/api/guardian/all/")
+    public ResponseEntity<List<Guardian>> findAll(){
+        List<Guardian> listGuardian = guardianService.findAll();
         return new ResponseEntity<>(listGuardian, HttpStatus.OK);
     }
 

@@ -40,9 +40,9 @@ public class UserController {
     @ApiResponses({
             @ApiResponse(responseCode = "User Object", description = "검색 유저 return")
     })
-    @GetMapping("/api/user/{userId}")
-    public ResponseEntity<User> findUserById(@PathVariable Long userId) {
-        User account = userService.findUserById(userId);
+    @GetMapping("/api/user")
+    public ResponseEntity<User> findUserById(Long id) {
+        User account = userService.findUserById(id);
         return new ResponseEntity<>(account, HttpStatus.OK);
     }
 
@@ -50,7 +50,7 @@ public class UserController {
     @ApiResponses({
             @ApiResponse(description = "Role에 따른 회원 조횐 return")
     })
-    @GetMapping("/api/user/count")
+    @GetMapping("/api/user/count/")
     public ResponseEntity<Long> countAllUser(){
         Long numberAllUser = userService.countAllUser();
         return new ResponseEntity<>(numberAllUser, HttpStatus.OK);
