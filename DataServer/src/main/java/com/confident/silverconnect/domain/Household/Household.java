@@ -49,6 +49,10 @@ public class Household {
         this.residentName = householdUpdateRequestDto.getResidentName();
         this.residentAge = householdUpdateRequestDto.getResidentAge();
         this.residentPhoneNumber = householdUpdateRequestDto.getResidentPhoneNumber();
+    }
 
+
+    public void updateRisk(Risk risk) {
+        this.risk = risk;
     }
 }

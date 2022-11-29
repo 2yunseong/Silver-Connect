@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class HouseholdService {
@@ -32,6 +34,14 @@ public class HouseholdService {
         return householdRepository.getByResidentPhoneNumber(phoneNumber)
                 .orElseThrow(() -> new IllegalArgumentException(NOT_FOUND_HOUSEHOLD_MESSAGE));
 
+    }
+
+    public List<Household> getAll() {
+        return householdRepository.findAll();
+    }
+
+    public List<Household> getAllOrderByRisk() {
+        return householdRepository.getAllByOrderByRiskDesc();
     }
 
     @Transactional

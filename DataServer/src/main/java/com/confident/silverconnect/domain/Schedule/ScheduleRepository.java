@@ -7,5 +7,9 @@ import java.util.List;
 
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
 
+    List<Schedule> findByDateTimeBetween(LocalDateTime start, LocalDateTime end);
+
     List<Schedule> findByUser_IdAndDateTimeBetween(Long userId, LocalDateTime start, LocalDateTime end);
+
+    void deleteByDateTimeBetween(LocalDateTime start, LocalDateTime end);
 }

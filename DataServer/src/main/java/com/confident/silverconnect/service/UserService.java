@@ -35,6 +35,10 @@ public class UserService {
         return userRepository.save(user);
     }
 
+    public List<User> getAll() {
+        return userRepository.findAll();
+    }
+
     @Transactional
     public Long countAllUser() {
         return userRepository.count();

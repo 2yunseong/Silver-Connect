@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.YearMonth;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,10 +55,19 @@ public class ScheduleService {
     }
 
     public List<ScheduleSimpleDto> getScheduleSimpleDtoByUserIdAndMonth(long userId, int month) {
-        LocalDateTime start = LocalDateTime.of(2022, month, 1, 0, 0);
-        LocalDateTime end = LocalDateTime.of(2022, month, 31, 0, 0);
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime start = LocalDateTime.of(now.getYear(), month, 1, 0, 0);
+        LocalDateTime end = LocalDateTime.of(now.getYear(), month, YearMonth.of(now.getYear(), month).atEndOfMonth().getDayOfMonth(), 23, 59);
 
         return scheduleRepository.findByUser_IdAndDateTimeBetween(userId, start, end).stream().map(ScheduleSimpleDto::new).collect(Collectors.toList());
+    }
+
+    public List<ScheduleSimpleDto> getScheduleSimpleDtoByDay(int day) {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime start = LocalDateTime.of(now.getYear(), now.getMonth(), day, 0, 0);
+        LocalDateTime end = LocalDateTime.of(now.getYear(), now.getMonth(), day, 23, 59);
+
+        return scheduleRepository.findByDateTimeBetween(start, end).stream().map(ScheduleSimpleDto::new).collect(Collectors.toList());
     }
 
     @Transactional
@@ -74,5 +84,13 @@ public class ScheduleService {
 
     public void deleteSchedule(long id) {
         scheduleRepository.deleteById(id);
+    }
+
+    public void deleteAllScheduleByDay(int day) {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime start = LocalDateTime.of(now.getYear(), now.getMonth(), day, 0, 0);
+        LocalDateTime end = LocalDateTime.of(now.getYear(), now.getMonth(), day, 23, 59);
+
+        scheduleRepository.deleteByDateTimeBetween(start, end);
     }
 }
