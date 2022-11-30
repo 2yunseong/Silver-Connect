@@ -31,6 +31,13 @@ public class SchedulingController {
         return ResponseEntity.ok().build();
     }
 
+    @PutMapping("/api/risk/fake-emergency")
+    public ResponseEntity<Void> triggerUpdateRiskWithFakeEmergency() {
+        schedulingService.updateRisksWithFakeEmergency();
+
+        return ResponseEntity.ok().build();
+    }
+
     @GetMapping("/api/scheduling/{day}")
     public ResponseEntity<List<ScheduleSimpleDto>> getAllScheduleByDay(@PathVariable(value = "day") Integer day) {
         List<ScheduleSimpleDto> scheduleSimpleDtos = scheduleService.getScheduleSimpleDtoByDay(day);

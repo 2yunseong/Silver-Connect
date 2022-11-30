@@ -107,6 +107,31 @@ public class SchedulingService {
         localDataIndex++;
     }
 
+    public void updateRisksWithFakeEmergency() {
+        System.out.println("   _____ _ _                   _____                            _              _____ \n" +
+                "  / ____(_) |                 / ____|                          | |       /\\   |_   _|\n" +
+                " | (___  _| |_   _____ _ __  | |     ___  _ __  _ __   ___  ___| |_     /  \\    | |  \n" +
+                "  \\___ \\| | \\ \\ / / _ \\ '__| | |    / _ \\| '_ \\| '_ \\ / _ \\/ __| __|   / /\\ \\   | |  \n" +
+                "  ____) | | |\\ V /  __/ |    | |___| (_) | | | | | | |  __/ (__| |_   / ____ \\ _| |_ \n" +
+                " |_____/|_|_| \\_/ \\___|_|     \\_____\\___/|_| |_|_| |_|\\___|\\___|\\__| /_/    \\_\\_____|\n" +
+                "                                                                                     \n" +
+                "                                                                                     ");
+        for (int i = 0; i < 8; i++) {
+            int riskIndex = 4;
+            if (i == 0) {
+                riskIndex = 1;
+            }
+
+            System.out.println("[Daily Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
+
+            Household household = householdService.getHouseholdById(i + 1);
+
+            if(household.getRisk().equals(Risk.EMERGENCY)){
+                sendSMS(household);
+            }
+        }
+    }
+
     private void sendSMS(Household household){
         RequestSMSDto requestSMSDto = new RequestSMSDto(household.getResidentName() + "님의 상태가 : " + household.getRisk() + "하오니 방문이 시급한 상태입니다.",
                 "010-1234-5678",
