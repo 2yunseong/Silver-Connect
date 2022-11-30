@@ -81,7 +81,9 @@ public class SchedulingService {
         return Integer.parseInt(predictedRisk);
     }
 
-    private void updateRisks() {
+    @Scheduled(cron = "0 0/10 * * * *")
+    @Transactional
+    public void updateRisks() {
         System.out.println("   _____ _ _                   _____                            _              _____ \n" +
                 "  / ____(_) |                 / ____|                          | |       /\\   |_   _|\n" +
                 " | (___  _| |_   _____ _ __  | |     ___  _ __  _ __   ___  ___| |_     /  \\    | |  \n" +
