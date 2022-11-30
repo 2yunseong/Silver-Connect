@@ -28,15 +28,7 @@ public class SchedulingService {
 
     private static final String RISK_AI_URL = "http://133.186.219.125:7000/predict";
 
-    private static final String LOCAL_DATA_DIR;
-
-    static {
-        try {
-            LOCAL_DATA_DIR = new File("").getCanonicalPath() + "/src/main/data/";
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
+    private static final String LOCAL_DATA_DIR = new File("").getAbsolutePath() + "/src/main/data/";
 
     private List<List<String>> householdsData = new ArrayList<>();
     private int localDataIndex = 0;
