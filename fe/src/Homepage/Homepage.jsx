@@ -4,7 +4,7 @@ import SCCalender from './SCCalender';
 import SCHomepageDetail from './SCHomepageDetail';
 
 function Homepage() {
-  const [residentId, setResidentId] = useState(1);
+  const [residentId, setResidentId] = useState(-1);
 
   return (
     <div className="flex">
