@@ -41,9 +41,9 @@ public class GuardianController {
             @ApiResponse(responseCode = "Guardian ", description = "보호자조회 Guardian")
     })
     @GetMapping("/api/guardian/")
-    public ResponseEntity<Guardian> findByHouseholdId(Integer householdId){
-        Household household = householdService.findById(householdId);
-        Guardian guardian = guardianService.findByHoushold(household);
+    public ResponseEntity<Guardian> findByHouseholdId(Long householdId){
+        Guardian guardian = guardianService.findByHouseholdId(householdId);
+
         return new ResponseEntity<>(guardian, HttpStatus.OK);
     }
 

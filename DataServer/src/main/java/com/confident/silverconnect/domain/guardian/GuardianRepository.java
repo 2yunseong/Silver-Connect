@@ -9,5 +9,4 @@ import java.util.Optional;
 public interface GuardianRepository extends JpaRepository<Guardian , Long> {
     List<Guardian> findByName(String name);
     Optional<Guardian> findByHousehold_Id(Long householdId);
-    Optional<Guardian> findByHousehold(Household household);
 }
