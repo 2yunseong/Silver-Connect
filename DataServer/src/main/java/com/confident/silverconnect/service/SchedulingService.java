@@ -99,7 +99,7 @@ public class SchedulingService {
                 "                                                                                     ");
         for (int i = 0; i < 8; i++) {
             int riskIndex = requestPredictRisk(householdsData.get(i).get(localDataIndex));
-            System.out.println("[Daily Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
+            System.out.println("[Risk calculation & Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
 
             Household household = householdService.getHouseholdById(i + 1);
             household.updateRisk(Risk.valueOfIndex(riskIndex));
@@ -128,7 +128,7 @@ public class SchedulingService {
                 riskIndex = 1;
             }
 
-            System.out.println("[Daily Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
+            System.out.println("[Risk calculation & Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
 
             Household household = householdService.getHouseholdById(i + 1);
 
@@ -140,6 +140,8 @@ public class SchedulingService {
     }
 
     private void sendSMS(Household household, Guardian guardian) {
+        System.out.println("[Emergency Handling] Send emergency mms!!");
+
         RequestSMSDto userSMSDto = new RequestSMSDto(
                 "[실버커넥트 긴급안내]",
                 "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
@@ -173,7 +175,6 @@ public class SchedulingService {
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-        System.out.println(gson.toJson(userSMSDto));
         String r2 = WebClient.create(SMS_REQUEST_URL)
                 .post()
                 .header(HttpHeaders.CONTENT_TYPE, "application/json;charset=UTF-8")
@@ -182,8 +183,6 @@ public class SchedulingService {
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-        System.out.println(r1);
-        System.out.println(r2);
     }
 
 //    {
