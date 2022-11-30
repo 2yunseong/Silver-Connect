@@ -4,6 +4,7 @@ import com.confident.silverconnect.domain.Household.Household;
 import com.confident.silverconnect.domain.Household.Risk;
 import com.confident.silverconnect.domain.Schedule.TimeTable;
 import com.confident.silverconnect.domain.User.User;
+import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.confident.silverconnect.util.EpochTime;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,7 @@ public class SchedulingService {
     private static final String SMS_REQUEST_URL = "https://api-sms.cloud.toast.com/sms/v3.0/appKeys/OwIeztV5gkkBodex/sender/sms";
     private final ScheduleService scheduleService;
     private final HouseholdService householdService;
+    private final GuardianService guardianService;
     private final UserService userService;
 
     private static final String RISK_AI_URL = "http://133.186.219.125:7000/predict";
@@ -49,9 +51,10 @@ public class SchedulingService {
         return data;
     }
 
-    public SchedulingService(ScheduleService scheduleService, HouseholdService householdService, UserService userService) throws IOException {
+    public SchedulingService(ScheduleService scheduleService, HouseholdService householdService, GuardianService guardianService, UserService userService) throws IOException {
         this.scheduleService = scheduleService;
         this.householdService = householdService;
+        this.guardianService = guardianService;
         this.userService = userService;
 
         householdsData.add(parseData(LOCAL_DATA_DIR + "1.csv"));
@@ -98,7 +101,7 @@ public class SchedulingService {
 
             Household household = householdService.getHouseholdById(i + 1);
 
-            if(household.getRisk().equals(Risk.EMERGENCY)){
+            if (household.getRisk().equals(Risk.EMERGENCY)) {
                 sendSMS(household);
             }
             household.updateRisk(Risk.valueOfIndex(riskIndex));
@@ -126,20 +129,52 @@ public class SchedulingService {
 
             Household household = householdService.getHouseholdById(i + 1);
 
-            if(household.getRisk().equals(Risk.EMERGENCY)){
-                sendSMS(household);
+            if (household.getRisk().equals(Risk.EMERGENCY)) {
+                Guardian guardian = guardianService.findByHouseholdId(household.getId());
+                sendSMS(household, guardian);
             }
         }
     }
 
-    private void sendSMS(Household household){
-        RequestSMSDto requestSMSDto = new RequestSMSDto(household.getResidentName() + "님의 상태가 : " + household.getRisk() + "하오니 방문이 시급한 상태입니다.",
-                "010-1234-5678",
-                Arrays.asList("821087979301", "821027526203", "821077413701", "821087999941"));
-        String requestUrl = WebClient.create(SMS_REQUEST_URL)
+    private void sendSMS(Household household, Guardian guardian) {
+        RequestSMSDto userSMSDto = new RequestSMSDto(
+                "[실버커넥트 긴급안내]\n" +
+                        "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
+                        "거주자명: " + household.getResidentName() + "\n" +
+                        "거주자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
+                        "거주지: " + household.getAddress() + "\n" +
+                        "\n" +
+                        "보호자명: " + guardian.getName() + "\n" +
+                        "보호자 전화번호: " + guardian.getPhoneNumber()
+                ,
+                "01087979301",
+                Arrays.asList("01087979301", "01087999941"));
+
+
+        RequestSMSDto guardianSMSDto = new RequestSMSDto(
+                "[실버커넥트 긴급안내]\n" +
+                        "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
+                        "거주자명: " + household.getResidentName() + "\n" +
+                        "거주자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
+                        "거주지: " + household.getAddress() + "\n" +
+                        "\n" +
+                        "보호자명: " + guardian.getName() + "\n" +
+                        "보호자 전화번호: " + guardian.getPhoneNumber()
+                ,
+                "01087979301",
+                Arrays.asList("01077413701", "01087999941"));
+
+        WebClient.create(SMS_REQUEST_URL)
                 .post()
                 .accept(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(requestSMSDto))
+                .body(BodyInserters.fromValue(userSMSDto))
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+        WebClient.create(SMS_REQUEST_URL)
+                .post()
+                .accept(MediaType.APPLICATION_JSON)
+                .body(BodyInserters.fromValue(guardianSMSDto))
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
