@@ -150,7 +150,7 @@ public class SchedulingService {
                         "보호자명: " + guardian.getName() + "\n" +
                         "보호자 전화번호: " + guardian.getPhoneNumber()
                 ,
-                "01087979301",
+                "01077413701",
                 Arrays.asList("01087979301", "01087999941"));
 
 
@@ -161,7 +161,7 @@ public class SchedulingService {
                         "피보호자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
                         "거주지: " + household.getAddress() + "\n"
                 ,
-                "01087979301",
+                "01077413701",
                 Arrays.asList("01077413701", "01027526203"));
 
         Gson gson = new Gson();
