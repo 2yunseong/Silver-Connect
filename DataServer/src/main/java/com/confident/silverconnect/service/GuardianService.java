@@ -5,8 +5,6 @@ import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.domain.guardian.GuardianRepository;
 import com.confident.silverconnect.dto.guardian.GuardianUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -62,9 +60,5 @@ public class GuardianService {
 
     public Guardian createGuardian(Guardian guardian) {
         return guardianRepository.save(guardian);
-    }
-
-    public Guardian findByHoushold(Household household) {
-        return guardianRepository.findByHousehold(household).orElseThrow(() -> new IllegalArgumentException("해당 household가 없습니다."));
     }
 }

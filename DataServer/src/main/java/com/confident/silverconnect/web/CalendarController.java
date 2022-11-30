@@ -34,7 +34,7 @@ public class CalendarController {
         List<ScheduleSimpleDto> scheduleSimpleDtos = scheduleService.getScheduleSimpleDtoByUserIdAndMonth(userid, month);
         List<ScheduleWithResidentDto> scheduleWithResidentDtos = new ArrayList<>();
         for (ScheduleSimpleDto dto : scheduleSimpleDtos) {
-            Guardian guardian = guardianService.findByHoushold(householdService.getByResidentName(dto.getResidentName()));
+            Guardian guardian = guardianService.findByHousehold(householdService.getByResidentName(dto.getResidentName()));
             scheduleWithResidentDtos.add(new ScheduleWithResidentDto(dto,guardian));
         }
         return ResponseEntity.ok(scheduleWithResidentDtos);
