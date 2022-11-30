@@ -32,25 +32,21 @@ public class SchedulingService {
     private List<List<String>> householdsData = new ArrayList<>();
     private int localDataIndex = 0;
 
-    private List<String> parseData(String path) {
+    private List<String> parseData(String path) throws IOException {
         List<String> data = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            br.readLine();
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        br.readLine();
 
-            String line;
-            while ((line = br.readLine()) != null) {
-                data.add(line);
-            }
-
-        } catch (IOException e) {
-            return Collections.emptyList();
+        String line;
+        while ((line = br.readLine()) != null) {
+            data.add(line);
         }
 
         return data;
     }
 
-    public SchedulingService(ScheduleService scheduleService, HouseholdService householdService, UserService userService) {
+    public SchedulingService(ScheduleService scheduleService, HouseholdService householdService, UserService userService) throws IOException {
         this.scheduleService = scheduleService;
         this.householdService = householdService;
         this.userService = userService;
@@ -119,7 +115,7 @@ public class SchedulingService {
 
             userIndex++;
             userIndex %= userIds.size();
-            timeIndex ++;
+            timeIndex++;
             timeIndex %= TimeTable.size();
         }
     }
