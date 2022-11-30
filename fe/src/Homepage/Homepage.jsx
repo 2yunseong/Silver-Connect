@@ -8,7 +8,7 @@ function Homepage() {
 
   return (
     <div className="flex">
-      <SCCalender householdId={1} setResidentId={setResidentId} />
+      <SCCalender userId={1} setResidentId={setResidentId} />
       <div className="mt-6 border-r-2 border-blue-300"></div>
       <SCHomepageDetail residentId={residentId} />
     </div>

@@ -10,17 +10,24 @@ import { useState } from 'react';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
+
+  // if (document.location.pathname !== '/login') {
+  //   if (!isLogin) {
+  //     document.location.href = '/login';
+  //   }
+  // }
+
   return (
     <BrowserRouter>
       <Navbar isLogin={isLogin} />
       <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/homepage' element={<Homepage />} />
-        <Route path='/household' element={<List />} />
-        <Route path='/household/:id/' element={<Select />} />
-        <Route path='/mypage' element={<MyPage />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/login' element={<Login setIsLogin={setIsLogin} />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/household" element={<List />} />
+        <Route path="/household/:id/" element={<Select />} />
+        <Route path="/mypage" element={<MyPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login setIsLogin={setIsLogin} />} />
       </Routes>
     </BrowserRouter>
   );

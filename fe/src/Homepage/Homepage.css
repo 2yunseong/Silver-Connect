@@ -9,3 +9,9 @@
 .timepicker:last-child {
   margin-right: 0;
 }
+
+.toastui-calendar-weekday-event-block:hover {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: #f4f4f4 1px;
+}
