@@ -156,54 +156,54 @@ public class DummyGenerator {
         guardian7 = guardianRepository.save(guardian7);
         guardian8 = guardianRepository.save(guardian8);
 
-        Schedule schedule1_1 = Schedule.builder()
-                .user(user1)
-                .household(household1)
-                .dateTime(LocalDateTime.of(2022, 12, 1, 7, 0))
-                .build();
-        Schedule schedule1_2 = Schedule.builder()
-                .user(user1)
-                .household(household2)
-                .dateTime(LocalDateTime.of(2022, 12, 1, 9, 0))
-                .build();
-        Schedule schedule1_3 = Schedule.builder()
-                .user(user1)
-                .household(household3)
-                .dateTime(LocalDateTime.of(2022, 12, 2, 13, 0))
-                .build();
-        Schedule schedule1_4 = Schedule.builder()
-                .user(user1)
-                .household(household4)
-                .dateTime(LocalDateTime.of(2022, 12, 3, 15, 0))
-                .build();
-        Schedule schedule2_1 = Schedule.builder()
-                .user(user2)
-                .household(household5)
-                .dateTime(LocalDateTime.of(2022, 12, 1, 7, 0))
-                .build();
-        Schedule schedule2_2 = Schedule.builder()
-                .user(user2)
-                .household(household6)
-                .dateTime(LocalDateTime.of(2022, 12, 1, 9, 0))
-                .build();
-        Schedule schedule2_3 = Schedule.builder()
-                .user(user2)
-                .household(household7)
-                .dateTime(LocalDateTime.of(2022, 12, 2, 13, 0))
-                .build();
-        Schedule schedule2_4 = Schedule.builder()
-                .user(user2)
-                .household(household8)
-                .dateTime(LocalDateTime.of(2022, 12, 3, 15, 0))
-                .build();
-
-        scheduleRepository.save(schedule1_1);
-        scheduleRepository.save(schedule1_2);
-        scheduleRepository.save(schedule1_3);
-        scheduleRepository.save(schedule1_4);
-        scheduleRepository.save(schedule2_1);
-        scheduleRepository.save(schedule2_2);
-        scheduleRepository.save(schedule2_3);
-        scheduleRepository.save(schedule2_4);
+//        Schedule schedule1_1 = Schedule.builder()
+//                .user(user1)
+//                .household(household1)
+//                .dateTime(LocalDateTime.of(2022, 12, 1, 7, 0))
+//                .build();
+//        Schedule schedule1_2 = Schedule.builder()
+//                .user(user1)
+//                .household(household2)
+//                .dateTime(LocalDateTime.of(2022, 12, 1, 9, 0))
+//                .build();
+//        Schedule schedule1_3 = Schedule.builder()
+//                .user(user1)
+//                .household(household3)
+//                .dateTime(LocalDateTime.of(2022, 12, 2, 13, 0))
+//                .build();
+//        Schedule schedule1_4 = Schedule.builder()
+//                .user(user1)
+//                .household(household4)
+//                .dateTime(LocalDateTime.of(2022, 12, 3, 15, 0))
+//                .build();
+//        Schedule schedule2_1 = Schedule.builder()
+//                .user(user2)
+//                .household(household5)
+//                .dateTime(LocalDateTime.of(2022, 12, 1, 7, 0))
+//                .build();
+//        Schedule schedule2_2 = Schedule.builder()
+//                .user(user2)
+//                .household(household6)
+//                .dateTime(LocalDateTime.of(2022, 12, 1, 9, 0))
+//                .build();
+//        Schedule schedule2_3 = Schedule.builder()
+//                .user(user2)
+//                .household(household7)
+//                .dateTime(LocalDateTime.of(2022, 12, 2, 13, 0))
+//                .build();
+//        Schedule schedule2_4 = Schedule.builder()
+//                .user(user2)
+//                .household(household8)
+//                .dateTime(LocalDateTime.of(2022, 12, 3, 15, 0))
+//                .build();
+//
+//        scheduleRepository.save(schedule1_1);
+//        scheduleRepository.save(schedule1_2);
+//        scheduleRepository.save(schedule1_3);
+//        scheduleRepository.save(schedule1_4);
+//        scheduleRepository.save(schedule2_1);
+//        scheduleRepository.save(schedule2_2);
+//        scheduleRepository.save(schedule2_3);
+//        scheduleRepository.save(schedule2_4);
     }
 }
