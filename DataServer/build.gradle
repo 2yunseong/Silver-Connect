@@ -36,6 +36,8 @@ dependencies {
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	implementation 'org.apache.tomcat:tomcat-jdbc'
 
+	implementation 'com.google.code.gson:gson:2.10'
+
 	// Swagger
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
 	// Spring actuator

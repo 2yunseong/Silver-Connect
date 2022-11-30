@@ -7,7 +7,9 @@ import com.confident.silverconnect.domain.User.User;
 import com.confident.silverconnect.domain.guardian.Guardian;
 import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.confident.silverconnect.util.EpochTime;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -24,7 +26,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class SchedulingService {
 
-    private static final String SMS_REQUEST_URL = "https://api-sms.cloud.toast.com/sms/v3.0/appKeys/OwIeztV5gkkBodex/sender/sms";
+    private static final String SMS_REQUEST_URL = "https://api-sms.cloud.toast.com/sms/v3.0/appKeys/OwIeztV5gkkBodex/sender/mms";
     private final ScheduleService scheduleService;
     private final HouseholdService householdService;
     private final GuardianService guardianService;
@@ -100,11 +102,12 @@ public class SchedulingService {
             System.out.println("[Daily Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
 
             Household household = householdService.getHouseholdById(i + 1);
+            household.updateRisk(Risk.valueOfIndex(riskIndex));
 
             if (household.getRisk().equals(Risk.EMERGENCY)) {
-                sendSMS(household);
+                Guardian guardian = guardianService.findByHouseholdId(household.getId());
+                sendSMS(household, guardian);
             }
-            household.updateRisk(Risk.valueOfIndex(riskIndex));
         }
 
         localDataIndex++;
@@ -129,7 +132,7 @@ public class SchedulingService {
 
             Household household = householdService.getHouseholdById(i + 1);
 
-            if (household.getRisk().equals(Risk.EMERGENCY)) {
+            if (riskIndex == 1) {
                 Guardian guardian = guardianService.findByHouseholdId(household.getId());
                 sendSMS(household, guardian);
             }
@@ -138,8 +141,8 @@ public class SchedulingService {
 
     private void sendSMS(Household household, Guardian guardian) {
         RequestSMSDto userSMSDto = new RequestSMSDto(
-                "[실버커넥트 긴급안내]\n" +
-                        "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
+                "[실버커넥트 긴급안내]",
+                "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
                         "거주자명: " + household.getResidentName() + "\n" +
                         "거주자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
                         "거주지: " + household.getAddress() + "\n" +
@@ -152,32 +155,35 @@ public class SchedulingService {
 
 
         RequestSMSDto guardianSMSDto = new RequestSMSDto(
-                "[실버커넥트 긴급안내]\n" +
-                        "관찰대상 가구 거주자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
-                        "거주자명: " + household.getResidentName() + "\n" +
-                        "거주자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
-                        "거주지: " + household.getAddress() + "\n" +
-                        "\n" +
-                        "보호자명: " + guardian.getName() + "\n" +
-                        "보호자 전화번호: " + guardian.getPhoneNumber()
+                "[실버커넥트 긴급안내]",
+                "피보호자의 상태가 응급하다고 판단되오니 방문이 필요합니다!\n" +
+                        "피보호자명: " + household.getResidentName() + "\n" +
+                        "피보호자 전화번호: " + household.getResidentPhoneNumber() + "\n" +
+                        "거주지: " + household.getAddress() + "\n"
                 ,
                 "01087979301",
-                Arrays.asList("01077413701", "01087999941"));
+                Arrays.asList("01077413701", "01027526203"));
 
-        WebClient.create(SMS_REQUEST_URL)
+        Gson gson = new Gson();
+        String r1 = WebClient.create(SMS_REQUEST_URL)
                 .post()
-                .accept(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(userSMSDto))
+                .header(HttpHeaders.CONTENT_TYPE, "application/json;charset=UTF-8")
+                .header("X-Secret-Key", "WUfkPlvk")
+                .bodyValue(gson.toJson(userSMSDto))
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-        WebClient.create(SMS_REQUEST_URL)
+        System.out.println(gson.toJson(userSMSDto));
+        String r2 = WebClient.create(SMS_REQUEST_URL)
                 .post()
-                .accept(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(guardianSMSDto))
+                .header(HttpHeaders.CONTENT_TYPE, "application/json;charset=UTF-8")
+                .header("X-Secret-Key", "WUfkPlvk")
+                .bodyValue(gson.toJson(guardianSMSDto))
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
+        System.out.println(r1);
+        System.out.println(r2);
     }
 
 //    {

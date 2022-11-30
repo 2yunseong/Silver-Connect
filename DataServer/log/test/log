@@ -1144,3 +1144,1011 @@ java.time.DateTimeException: Invalid date 'NOVEMBER 31'
 2022-11-30 21:01:59.639  INFO 13910 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-11-30 21:01:59.641  INFO 13910 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-11-30 21:01:59.643  INFO 13910 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 21:42:25.935  INFO 13910 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:42:25.941  INFO 13910 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:42:25.961  INFO 13910 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:42:25.965  INFO 13910 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:42:31.372  INFO 15465 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15465 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:42:31.380  INFO 15465 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:42:32.336  INFO 15465 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:42:32.406  INFO 15465 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:42:32.945  INFO 15465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:42:32.958  INFO 15465 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:42:32.959  INFO 15465 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:42:33.067  INFO 15465 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:42:33.068  INFO 15465 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1612 ms
+2022-11-30 21:42:33.094  INFO 15465 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:42:33.241  INFO 15465 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:42:33.253  INFO 15465 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:42:33.402  INFO 15465 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:42:33.447  INFO 15465 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:42:33.597  INFO 15465 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:42:33.688  INFO 15465 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:42:34.286  INFO 15465 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:42:34.293  INFO 15465 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:42:35.062  WARN 15465 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:42:35.739  INFO 15465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:42:35.756  INFO 15465 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.024 seconds (JVM running for 6.153)
+2022-11-30 21:42:48.585  INFO 15465 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:42:48.587  INFO 15465 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:42:48.589  INFO 15465 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-30 21:44:26.622  INFO 15465 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:44:26.622  INFO 15465 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:44:27.073  INFO 15465 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:44:27.077  INFO 15465 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:44:31.031  INFO 15495 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15495 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:44:31.033  INFO 15495 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:44:31.718  INFO 15495 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:44:31.790  INFO 15495 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:44:32.343  INFO 15495 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:44:32.352  INFO 15495 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:44:32.353  INFO 15495 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:44:32.482  INFO 15495 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:44:32.482  INFO 15495 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1411 ms
+2022-11-30 21:44:32.512  INFO 15495 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:44:32.676  INFO 15495 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:44:32.686  INFO 15495 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:44:32.864  INFO 15495 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:44:32.927  INFO 15495 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:44:33.083  INFO 15495 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:44:33.199  INFO 15495 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:44:33.815  INFO 15495 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:44:33.823  INFO 15495 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:44:34.638  WARN 15495 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:44:35.400  INFO 15495 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:44:35.416  INFO 15495 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.79 seconds (JVM running for 5.987)
+2022-11-30 21:44:37.218  INFO 15495 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:44:37.238  INFO 15495 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:44:37.241  INFO 15495 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-30 21:44:39.433  WARN 15495 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [31800901-1, L:/172.30.1.91:54286 - R:api-sms.cloud.toast.com/115.88.123.133:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:44:39.475 ERROR 15495 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:48:46.686  INFO 15495 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:48:46.687  INFO 15495 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:48:46.702  INFO 15495 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:48:46.705  INFO 15495 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:48:50.351  INFO 15563 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15563 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:48:50.354  INFO 15563 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:48:51.292  INFO 15563 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:48:51.382  INFO 15563 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:48:51.926  INFO 15563 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:48:51.936  INFO 15563 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:48:51.936  INFO 15563 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:48:52.076  INFO 15563 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:48:52.076  INFO 15563 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1676 ms
+2022-11-30 21:48:52.106  INFO 15563 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:48:52.276  INFO 15563 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:48:52.291  INFO 15563 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:48:52.531  INFO 15563 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:48:52.623  INFO 15563 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:48:52.795  INFO 15563 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:48:52.899  INFO 15563 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:48:53.669  INFO 15563 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:48:53.678  INFO 15563 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:48:54.603  WARN 15563 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:48:55.457  INFO 15563 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:48:55.475  INFO 15563 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.483 seconds (JVM running for 6.199)
+2022-11-30 21:48:57.808  INFO 15563 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:48:57.809  INFO 15563 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:48:57.811  INFO 15563 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-30 21:48:58.970  WARN 15563 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [4e00cc06-1, L:/172.30.1.91:54371 - R:api-sms.cloud.toast.com/43.227.116.51:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:48:58.990 ERROR 15563 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type 'application/json' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:49:31.835  INFO 15563 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:49:31.836  INFO 15563 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:49:31.851  INFO 15563 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:49:31.854  INFO 15563 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:49:35.438  INFO 15578 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15578 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:49:35.441  INFO 15578 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:49:36.191  INFO 15578 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:49:36.264  INFO 15578 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:49:36.846  INFO 15578 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:49:36.860  INFO 15578 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:49:36.861  INFO 15578 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:49:36.985  INFO 15578 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:49:36.986  INFO 15578 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1500 ms
+2022-11-30 21:49:37.019  INFO 15578 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:49:37.201  INFO 15578 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:49:37.214  INFO 15578 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:49:37.401  INFO 15578 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:49:37.454  INFO 15578 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:49:37.621  INFO 15578 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:49:37.728  INFO 15578 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:49:38.379  INFO 15578 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:49:38.386  INFO 15578 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:49:39.118  WARN 15578 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:49:39.739  INFO 15578 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:49:39.755  INFO 15578 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.688 seconds (JVM running for 5.484)
+2022-11-30 21:49:43.412  INFO 15578 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:49:43.421  INFO 15578 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:49:43.423  INFO 15578 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-30 21:49:44.950  WARN 15578 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [de969a44-1, L:/172.30.1.91:54386 - R:api-sms.cloud.toast.com/117.52.122.43:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:49:44.989 ERROR 15578 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type '' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:50:59.993  INFO 15578 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:50:59.994  INFO 15578 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:51:00.009  INFO 15578 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:51:00.012  INFO 15578 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:51:03.819  INFO 15609 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15609 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:51:03.823  INFO 15609 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:51:04.631  INFO 15609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:51:04.700  INFO 15609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:51:05.432  INFO 15609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:51:05.450  INFO 15609 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:51:05.451  INFO 15609 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:51:05.593  INFO 15609 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:51:05.594  INFO 15609 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1722 ms
+2022-11-30 21:51:05.632  INFO 15609 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:51:05.883  INFO 15609 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:51:05.898  INFO 15609 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:51:06.077  INFO 15609 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:51:06.147  INFO 15609 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:51:06.311  INFO 15609 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:51:06.423  INFO 15609 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:51:07.090  INFO 15609 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:51:07.097  INFO 15609 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:51:07.915  WARN 15609 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:51:08.774  INFO 15609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:51:08.799  INFO 15609 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.315 seconds (JVM running for 6.165)
+2022-11-30 21:51:22.757  INFO 15609 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:51:22.765  INFO 15609 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:51:22.766  INFO 15609 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 21:51:24.233  WARN 15609 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [490bf9b6-1, L:/172.30.1.91:54422 - R:api-sms.cloud.toast.com/115.88.123.133:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:51:24.265 ERROR 15609 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:51:48.347  INFO 15609 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:51:48.349  INFO 15609 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:51:48.364  INFO 15609 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:51:48.367  INFO 15609 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:51:51.952  INFO 15624 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15624 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:51:51.955  INFO 15624 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:51:52.724  INFO 15624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:51:52.800  INFO 15624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:51:53.393  INFO 15624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:51:53.405  INFO 15624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:51:53.405  INFO 15624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:51:53.521  INFO 15624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:51:53.521  INFO 15624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
+2022-11-30 21:51:53.547  INFO 15624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:51:53.710  INFO 15624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:51:53.721  INFO 15624 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:51:53.884  INFO 15624 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:51:53.957  INFO 15624 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:51:54.122  INFO 15624 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:51:54.240  INFO 15624 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:51:54.845  INFO 15624 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:51:54.852  INFO 15624 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:51:55.617  WARN 15624 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:51:56.236  INFO 15624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:51:56.251  INFO 15624 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.694 seconds (JVM running for 5.569)
+2022-11-30 21:51:59.744  INFO 15624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:51:59.745  INFO 15624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:51:59.747  INFO 15624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 21:52:01.163  WARN 15624 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [678c4171-1, L:/172.30.1.91:54437 - R:api-sms.cloud.toast.com/115.88.123.133:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:52:01.182 ERROR 15624 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:57:56.224  INFO 15624 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:57:56.226  INFO 15624 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 21:57:56.244  INFO 15624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 21:57:56.247  INFO 15624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 21:57:59.628  INFO 15719 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15719 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 21:57:59.632  INFO 15719 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 21:58:00.478  INFO 15719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 21:58:00.552  INFO 15719 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2022-11-30 21:58:01.077  INFO 15719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 21:58:01.086  INFO 15719 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 21:58:01.086  INFO 15719 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 21:58:01.191  INFO 15719 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 21:58:01.193  INFO 15719 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
+2022-11-30 21:58:01.219  INFO 15719 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 21:58:01.365  INFO 15719 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 21:58:01.376  INFO 15719 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 21:58:01.523  INFO 15719 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 21:58:01.570  INFO 15719 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 21:58:01.718  INFO 15719 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 21:58:01.806  INFO 15719 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 21:58:02.399  INFO 15719 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 21:58:02.406  INFO 15719 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 21:58:03.096  WARN 15719 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 21:58:03.685  INFO 15719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 21:58:03.700  INFO 15719 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.433 seconds (JVM running for 5.09)
+2022-11-30 21:58:10.325  INFO 15719 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 21:58:10.326  INFO 15719 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 21:58:10.327  INFO 15719 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 21:58:12.296  WARN 15719 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [1e148923-1, L:/172.30.1.91:54537 - R:api-sms.cloud.toast.com/117.52.122.43:443] The connection observed an error
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 21:58:12.315 ERROR 15719 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientRequestException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto; nested exception is org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto] with root cause
+
+org.springframework.web.reactive.function.UnsupportedMediaTypeException: Content type 'application/json;charset=UTF-8' not supported for bodyType=com.confident.silverconnect.service.RequestSMSDto
+	at org.springframework.web.reactive.function.BodyInserters.unsupportedError(BodyInserters.java:391) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$writeWithMessageWriters$11(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.web.reactive.function.BodyInserters.writeWithMessageWriters(BodyInserters.java:381) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.BodyInserters.lambda$fromValue$1(BodyInserters.java:98) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.DefaultClientRequestBuilder$BodyInserterRequest.writeTo(DefaultClientRequestBuilder.java:275) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$exchange$1(ExchangeFunctions.java:103) ~[spring-webflux-5.3.24.jar:5.3.24]
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.lambda$connect$2(ReactorClientHttpConnector.java:111) ~[spring-web-5.3.24.jar:5.3.24]
+	at reactor.netty.http.client.HttpClientConnect$HttpClientHandler.requestWithBody(HttpClientConnect.java:600) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.lambda$onStateChange$0(HttpClientConnect.java:440) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44) ~[reactor-core-3.4.25.jar:3.4.25]
+	at reactor.netty.http.client.HttpClientConnect$HttpIOHandlerObserver.onStateChange(HttpClientConnect.java:441) ~[reactor-netty-http-1.0.25.jar:1.0.25]
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:677) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onStateChange(DefaultPooledConnectionProvider.java:187) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onStateChange(DefaultPooledConnectionProvider.java:444) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at reactor.netty.channel.ChannelOperationsHandler.channelActive(ChannelOperationsHandler.java:62) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:262) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelActive(CombinedChannelDuplexHandler.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelActive(ChannelInboundHandlerAdapter.java:69) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelActive(CombinedChannelDuplexHandler.java:211) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:260) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelActive(AbstractChannelHandlerContext.java:238) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelActive(AbstractChannelHandlerContext.java:231) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at reactor.netty.tcp.SslProvider$SslReadHandler.userEventTriggered(SslProvider.java:847) ~[reactor-netty-core-1.0.25.jar:1.0.25]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:400) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(AbstractChannelHandlerContext.java:376) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered(AbstractChannelHandlerContext.java:368) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.setHandshakeSuccess(SslHandler.java:1838) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1360) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1236) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1285) ~[netty-handler-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:468) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-11-30 22:00:44.835  INFO 15719 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:00:44.840  INFO 15719 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 22:00:44.867  INFO 15719 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 22:00:44.873  INFO 15719 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 22:00:50.468  INFO 15775 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15775 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 22:00:50.471  INFO 15775 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 22:00:51.317  INFO 15775 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 22:00:51.394  INFO 15775 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2022-11-30 22:00:51.983  INFO 15775 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 22:00:51.994  INFO 15775 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 22:00:51.994  INFO 15775 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 22:00:52.139  INFO 15775 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 22:00:52.139  INFO 15775 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2022-11-30 22:00:52.167  INFO 15775 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 22:00:52.393  INFO 15775 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 22:00:52.403  INFO 15775 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 22:00:52.564  INFO 15775 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 22:00:52.627  INFO 15775 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 22:00:52.785  INFO 15775 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 22:00:52.937  INFO 15775 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 22:00:53.703  INFO 15775 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 22:00:53.714  INFO 15775 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:00:54.570  WARN 15775 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 22:00:55.728  INFO 15775 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 22:00:55.747  INFO 15775 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.759 seconds (JVM running for 6.591)
+2022-11-30 22:00:56.576  INFO 15775 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 22:00:56.577  INFO 15775 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 22:00:56.578  INFO 15775 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 22:02:34.688  INFO 15775 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:02:34.691  INFO 15775 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 22:02:34.730  INFO 15775 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 22:02:34.737  INFO 15775 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 22:02:39.473  INFO 15802 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15802 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 22:02:39.478  INFO 15802 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 22:02:40.382  INFO 15802 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 22:02:40.462  INFO 15802 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2022-11-30 22:02:41.029  INFO 15802 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 22:02:41.037  INFO 15802 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 22:02:41.038  INFO 15802 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 22:02:41.170  INFO 15802 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 22:02:41.171  INFO 15802 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1638 ms
+2022-11-30 22:02:41.209  INFO 15802 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 22:02:41.406  INFO 15802 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 22:02:41.418  INFO 15802 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 22:02:41.566  INFO 15802 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 22:02:41.617  INFO 15802 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 22:02:41.802  INFO 15802 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 22:02:41.919  INFO 15802 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 22:02:42.566  INFO 15802 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 22:02:42.574  INFO 15802 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:02:43.281  WARN 15802 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 22:02:43.929  INFO 15802 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 22:02:43.945  INFO 15802 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.861 seconds (JVM running for 5.703)
+2022-11-30 22:02:46.183  INFO 15802 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 22:02:46.186  INFO 15802 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 22:02:46.188  INFO 15802 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-30 22:04:55.592  INFO 15802 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:04:55.593  INFO 15802 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 22:04:55.609  INFO 15802 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 22:04:55.612  INFO 15802 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 22:04:59.840  INFO 15838 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15838 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 22:04:59.847  INFO 15838 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 22:05:00.729  INFO 15838 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 22:05:00.803  INFO 15838 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2022-11-30 22:05:01.487  INFO 15838 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 22:05:01.521  INFO 15838 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 22:05:01.522  INFO 15838 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 22:05:01.656  INFO 15838 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 22:05:01.657  INFO 15838 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1759 ms
+2022-11-30 22:05:01.695  INFO 15838 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 22:05:01.882  INFO 15838 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 22:05:01.894  INFO 15838 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 22:05:02.077  INFO 15838 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 22:05:02.125  INFO 15838 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 22:05:02.270  INFO 15838 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 22:05:02.370  INFO 15838 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 22:05:02.986  INFO 15838 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 22:05:02.996  INFO 15838 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:05:03.752  WARN 15838 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 22:05:04.432  INFO 15838 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 22:05:04.454  INFO 15838 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.05 seconds (JVM running for 5.905)
+2022-11-30 22:05:05.252  INFO 15838 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 22:05:05.253  INFO 15838 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 22:05:05.254  INFO 15838 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 22:10:29.257  INFO 15838 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:10:29.259  INFO 15838 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 22:10:29.276  INFO 15838 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 22:10:29.279  INFO 15838 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 22:10:33.938  INFO 15900 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15900 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 22:10:33.949  INFO 15900 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 22:10:35.048  INFO 15900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 22:10:35.139  INFO 15900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2022-11-30 22:10:35.811  INFO 15900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 22:10:35.822  INFO 15900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 22:10:35.822  INFO 15900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 22:10:35.962  INFO 15900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 22:10:35.962  INFO 15900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1912 ms
+2022-11-30 22:10:35.992  INFO 15900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 22:10:36.165  INFO 15900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 22:10:36.177  INFO 15900 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 22:10:36.337  INFO 15900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 22:10:36.389  INFO 15900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 22:10:36.537  INFO 15900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 22:10:36.631  INFO 15900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 22:10:37.197  INFO 15900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 22:10:37.205  INFO 15900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:10:37.897  WARN 15900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 22:10:38.539  INFO 15900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 22:10:38.555  INFO 15900 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 5.411 seconds (JVM running for 6.365)
+2022-11-30 22:10:41.570  INFO 15900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 22:10:41.585  INFO 15900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 22:10:41.587  INFO 15900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-30 22:13:43.295  INFO 15900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:13:43.296  INFO 15900 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-30 22:13:43.318  INFO 15900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30 22:13:43.324  INFO 15900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30 22:13:47.865  INFO 15943 --- [main] c.c.s.SilverconnectApplication           : Starting SilverconnectApplication using Java 11.0.17 on gwonsunchan-ui-MacBookPro.local with PID 15943 (/Users/chan/code/java/Silver-Connect/DataServer/build/classes/java/main started by chan in /Users/chan/code/java/Silver-Connect/DataServer)
+2022-11-30 22:13:47.870  INFO 15943 --- [main] c.c.s.SilverconnectApplication           : The following 1 profile is active: "secret"
+2022-11-30 22:13:48.728  INFO 15943 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30 22:13:48.798  INFO 15943 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+2022-11-30 22:13:49.378  INFO 15943 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-30 22:13:49.389  INFO 15943 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-30 22:13:49.390  INFO 15943 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-11-30 22:13:49.512  INFO 15943 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-30 22:13:49.512  INFO 15943 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1586 ms
+2022-11-30 22:13:49.544  INFO 15943 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30 22:13:49.716  INFO 15943 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30 22:13:49.729  INFO 15943 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2022-11-30 22:13:49.890  INFO 15943 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30 22:13:49.955  INFO 15943 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-11-30 22:13:50.099  INFO 15943 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-30 22:13:50.212  INFO 15943 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-30 22:13:50.816  INFO 15943 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30 22:13:50.824  INFO 15943 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30 22:13:51.559  WARN 15943 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-30 22:13:52.223  INFO 15943 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-30 22:13:52.258  INFO 15943 --- [main] c.c.s.SilverconnectApplication           : Started SilverconnectApplication in 4.805 seconds (JVM running for 5.577)
+2022-11-30 22:13:54.834  INFO 15943 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-30 22:13:54.849  INFO 15943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-30 22:13:54.853  INFO 15943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
