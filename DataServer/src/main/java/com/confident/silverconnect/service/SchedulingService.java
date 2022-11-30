@@ -6,6 +6,7 @@ import com.confident.silverconnect.domain.Schedule.TimeTable;
 import com.confident.silverconnect.domain.User.User;
 import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.confident.silverconnect.util.EpochTime;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -20,8 +21,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class SchedulingService {
 
+    private static final String SMS_REQUEST_URL = "https://api-sms.cloud.toast.com/sms/v3.0/appKeys/OwIeztV5gkkBodex/sender/sms";
     private final ScheduleService scheduleService;
     private final HouseholdService householdService;
     private final UserService userService;
@@ -76,7 +79,6 @@ public class SchedulingService {
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-
         return Integer.parseInt(predictedRisk);
     }
 
@@ -86,11 +88,49 @@ public class SchedulingService {
             System.out.println(i + " : riskIndex " + riskIndex);
 
             Household household = householdService.getHouseholdById(i + 1);
+
+            if(household.getRisk().equals(Risk.EMERGENCY)){
+                sendSMS(household);
+            }
             household.updateRisk(Risk.valueOfIndex(riskIndex));
         }
 
         localDataIndex++;
     }
+
+    private void sendSMS(Household household){
+        RequestSMSDto requestSMSDto = new RequestSMSDto(household.getResidentName() + "님의 상태가 : " + household.getRisk() + "하오니 방문이 시급한 상태입니다.",
+                "010-1234-5678",
+                Arrays.asList("821087979301", "821027526203", "821077413701", "821087999941"));
+        String requestUrl = WebClient.create(SMS_REQUEST_URL)
+                .post()
+                .accept(MediaType.APPLICATION_JSON)
+                .body(BodyInserters.fromValue(requestSMSDto))
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+    }
+
+//    {
+//        "templateId":"TemplateId",
+//            "body":"본문",
+//            "sendNo":"15446859",
+//            "requestDate":"2018-08-10 10:00",
+//            "senderGroupingKey":"SenderGroupingKey",
+//            "recipientList":[
+//        {
+//            "recipientNo":"01000000000",
+//                "countryCode":"82",
+//                "internationalRecipientNo":"821000000000",
+//                "templateParameter":{
+//            "key":"value"
+//        },
+//            "recipientGroupingKey":"recipientGroupingKey"
+//        }
+//   ],
+//        "userId":"UserId",
+//            "statsId":"statsId"
+//    }
 
     @Scheduled(cron = "0 0 0 * * *")
     @Transactional
