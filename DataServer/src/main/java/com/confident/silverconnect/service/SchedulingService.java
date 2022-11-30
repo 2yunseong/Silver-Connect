@@ -6,7 +6,7 @@ import com.confident.silverconnect.domain.Schedule.TimeTable;
 import com.confident.silverconnect.domain.User.User;
 import com.confident.silverconnect.dto.schedule.ScheduleCreateDto;
 import com.confident.silverconnect.util.EpochTime;
-import org.springframework.http.HttpStatus;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -20,6 +20,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class SchedulingService {
 
     private final ScheduleService scheduleService;
@@ -81,9 +82,17 @@ public class SchedulingService {
     }
 
     private void updateRisks() {
+        System.out.println("   _____ _ _                   _____                            _              _____ \n" +
+                "  / ____(_) |                 / ____|                          | |       /\\   |_   _|\n" +
+                " | (___  _| |_   _____ _ __  | |     ___  _ __  _ __   ___  ___| |_     /  \\    | |  \n" +
+                "  \\___ \\| | \\ \\ / / _ \\ '__| | |    / _ \\| '_ \\| '_ \\ / _ \\/ __| __|   / /\\ \\   | |  \n" +
+                "  ____) | | |\\ V /  __/ |    | |___| (_) | | | | | | |  __/ (__| |_   / ____ \\ _| |_ \n" +
+                " |_____/|_|_| \\_/ \\___|_|     \\_____\\___/|_| |_|_| |_|\\___|\\___|\\__| /_/    \\_\\_____|\n" +
+                "                                                                                     \n" +
+                "                                                                                     ");
         for (int i = 0; i < 8; i++) {
             int riskIndex = requestPredictRisk(householdsData.get(i).get(localDataIndex));
-            System.out.println(i + " : riskIndex " + riskIndex);
+            System.out.println("[Daily Scheduling] Household " + i + " Risk level : " + Risk.valueOfIndex(riskIndex).toString());
 
             Household household = householdService.getHouseholdById(i + 1);
             household.updateRisk(Risk.valueOfIndex(riskIndex));
