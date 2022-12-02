@@ -1,0 +1,35 @@
+.table-container{
+    margin: 60px auto 60px auto;
+    max-width: 1500px;
+    min-width: 1200px;
+    animation: fadein 1.2s;
+}
+
+tbody > tr:hover {
+    background-color: #ddd;
+}
+.SAFE {
+    background-color: #25BF34;
+}
+
+.WARN {
+    background-color: #FFEA2C;
+}
+
+.DANGER {
+    background-color: #ED6400;
+}
+
+.EMERGENCY {
+    background-color: #F31818;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

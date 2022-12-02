@@ -1,0 +1,14 @@
+.login-container{
+    margin: 140px auto 50px auto;
+    max-width: 600px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
